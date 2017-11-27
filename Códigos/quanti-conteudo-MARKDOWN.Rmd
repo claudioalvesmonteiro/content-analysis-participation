@@ -1,6 +1,6 @@
 ---
-title: "Pr·tica em An·lise de Conte˙do Quantitativa"
-author: "Cl·udio A. Monteiro"
+title: "Pr√°tica em An√°lise de Conte√∫do Quantitativa"
+author: "Cl√°udio A. Monteiro"
 date: "27 de novembro de 2017"
 output: html_document
 ---
@@ -11,20 +11,27 @@ text-align: justify}
 </style>
 
 
-# INTRODU«√O
+# INTRODU√á√ÉO
 
-O que È e como fazer uma an·lise de conte˙do quantitativa? Este artigo busca responder esta resposta de forma intuitiva levantando os principais conceitos dessa tÈcnica e a executando na pr·tica. Para tal ser· exposto dois exemplos de an·lises da CiÍncia PolÌtica envolvendo (1) An·lise de reuniıes de arenas democr·ticas (conselhos gestores) e (2) an·lise de documentos polÌticos e partid·rios (manifesto partid·rio e programa de governo). Toda a an·lise ser· feita em linguagem de programaÁ„o R.
+O que √© e como fazer uma an√°lise de conte√∫do quantitativa? Este artigo busca responder esta resposta de forma intuitiva levantando os principais conceitos dessa t√©cnica e a executando na pr√°tica. Para tal ser√° exposto dois exemplos de an√°lises da Ci√™ncia Pol√≠tica envolvendo (1) An√°lise de reuni√µes de arenas democr√°ticas (conselhos gestores) e (2) an√°lise de documentos pol√≠ticos e partid√°rios (manifesto partid√°rio e programa de governo). Toda a an√°lise ser√° feita em linguagem de programa√ß√£o R.
 
-## Exemplo 1: An·lise de Conte˙do de EspaÁos Democr·ticos
+# Exemplo 1: An√°lise de Conte√∫do de Espa√ßos Democr√°ticos
 
-O termo Democracia tem origem no grego antigo *demokratÌa* (governo do povo). Foi criado a partir de *demos* (povo) e *kratos* (poder) no sÈculo V a.C. para denotar o sistema de governo vigente na GrÈcia, mais especificamente no perÌodo arcaico ateniense (Braick, 2006). Nesta Època todos os indivÌduos considerados cidad„os tinham direito a participar da Assembleia, que estabelecia as leis e discutia os problemas da cidade-estado. 
+## Teoria Democr√°tica
 
-Com o avanÁo da histÛria e apÛs crises, guerras, monarcas, a espans„o do direito ao voto par maioria da populaÁ„o em democracias a democracia sofre mudanÁas abruptas. A espans„o do direito ao voto par maioria da populaÁ„o em democracias emergentes e o crescimento demogr·fico tornam f·ctivel a democracia representativa, baseada na eleiÁ„o de representantes que governam e legislam pelo povo (Gomes, 2015).
+Analisar as rela√ß√µes entre grupos e pessoas em espa√ßos democr√°ticos √© essencial para compreender seu funcionamento e efetividade.
 
-Segundo Pitkin (1967) representaÁ„o significa "agir no melhor interesse do p˙blico". Um desafio inerente a essa quest„o È avaliar o interesse pelo ponto de vista do representado, mas tambÈm pelo do representante. Mecanismos de responsividade, como as eleiÁıes regulares, buscam conciliar essas perspectivas pois serviria como um momento para o representado avaliar o que foi feito em termos de polÌticas pelo governo vigente a fim de  de punir ou premiar o representante. Entretanto problemas de disponibilidade, manipulaÁ„o ou assimetria de informaÁ„o podem comprometer a integridade desse processo (Gomes, 2015).
+O termo Democracia tem origem no grego antigo *demokrat√≠a* (governo do povo). Foi criado a partir de *demos* (povo) e *kratos* (poder) no s√©culo V a.C. para denotar o sistema de governo vigente na Gr√©cia, mais especificamente no per√≠odo arcaico ateniense (Braick, 2006). Nesta √©poca todos os indiv√≠duos considerados cidad√£os tinham direito a participar da Assembleia, que estabelecia as leis e discutia os problemas da cidade-estado. Com o avan√ßo da hist√≥ria e ap√≥s crises, guerras, monarcas, a espans√£o do direito ao voto par maioria da popula√ß√£o em democracias a democracia sofre mudan√ßas abruptas. A espans√£o do direito ao voto par maioria da popula√ß√£o em democracias emergentes e o crescimento demogr√°fico tornam f√°ctivel a democracia representativa, baseada na elei√ß√£o de representantes que governam e legislam pelo povo (Gomes, 2015).
+
+Desde ent√£o os estudiosos com suas diferentes perpectivas procuram definir as bases de uma Teoria Democr√°tica, TD para os √≠ntimos. Te√≥ricos e analistas da TD debatem sobre necessidade de se ter uma defini√ß√£o de democracia reestrita, tomando como base as elei√ß√µes livres e justas e o voto universal, ou ampliando essa defini√£o e incluindo tamb√©m a liberdade express√£o e associa√ß√£o mais o efetivo governo eleito (sem a presen√ßa de grupos que impessam o pleno governo democr√°tico).
+
+## Conselhos Gestores
+
+Em 1988 com o processo de redemocratiza√ß√£o no Brasil, o mecanismo de gest√£o de pol√≠ticas p√∫blicas por conselhos √© inclu√≠do na constitui√ß√£o e adotado nas diferentes esferas de governo do Estado. Com base em Gomes (2003) um conselho gestor definido como ‚Äú um colegiado institucionalizado, composto de um pequeno n√∫mero de representantes do governo e da sociedade civil, estes designados democraticamente, que √© respons√°vel pela gest√£o de uma pol√≠tica p√∫blica‚Äù. Estes instituem um espa√ßo democr√°tico que visa atingir 3 objetivos: (1) promover a constru√ß√£o da cidadania e a educa√ß√£o pol√≠tica; (2) viabilizar a identifica√ß√£o e capta√ß√£o permanente das demandas da sociedade; e (3) exercer controle social sobre o governo (GOMES, 2003).
 
 
-# REFER NCIAS
+
+# REFER√äNCIAS
 
 
 
