@@ -1,0 +1,34 @@
+---
+title: "Prática em Análise de Conteúdo Quantitativa"
+author: "Cláudio A. Monteiro"
+date: "27 de novembro de 2017"
+output: html_document
+---
+
+<style>
+body {
+text-align: justify}
+</style>
+
+
+# INTRODUÇÃO
+
+O que é e como fazer uma análise de conteúdo quantitativa? Este artigo busca responder esta resposta de forma intuitiva levantando os principais conceitos dessa técnica e a executando na prática. Para tal será exposto dois exemplos de análises da Ciência Política envolvendo (1) Análise de reuniões de arenas democráticas (conselhos gestores) e (2) análise de documentos políticos e partidários (manifesto partidário e programa de governo). Toda a análise será feita em linguagem de programação R.
+
+## Exemplo 1: Análise de Conteúdo de Espaços Democráticos
+
+O termo Democracia tem origem no grego antigo *demokratía* (governo do povo). Foi criado a partir de *demos* (povo) e *kratos* (poder) no século V a.C. para denotar o sistema de governo vigente na Grécia, mais especificamente no período arcaico ateniense (Braick, 2006). Nesta época todos os indivíduos considerados cidadãos tinham direito a participar da Assembleia, que estabelecia as leis e discutia os problemas da cidade-estado. 
+
+Com o avanço da história e após crises, guerras, monarcas, a espansão do direito ao voto par maioria da população em democracias a democracia sofre mudanças abruptas. A espansão do direito ao voto par maioria da população em democracias emergentes e o crescimento demográfico tornam fáctivel a democracia representativa, baseada na eleição de representantes que governam e legislam pelo povo (Gomes, 2015).
+
+Segundo Pitkin (1967) representação significa "agir no melhor interesse do público". Um desafio inerente a essa questão é avaliar o interesse pelo ponto de vista do representado, mas também pelo do representante. Mecanismos de responsividade, como as eleições regulares, buscam conciliar essas perspectivas pois serviria como um momento para o representado avaliar o que foi feito em termos de políticas pelo governo vigente a fim de  de punir ou premiar o representante. Entretanto problemas de disponibilidade, manipulação ou assimetria de informação podem comprometer a integridade desse processo (Gomes, 2015).
+
+
+# REFERÊNCIAS
+
+
+
+
+
+
+
