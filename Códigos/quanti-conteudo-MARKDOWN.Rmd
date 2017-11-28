@@ -19,7 +19,7 @@ Como categorizar e analisar documentos de forma automática? Este projeto busca 
 
 **Por que aprender linguagem de programação?** A resposta é simples: fazer mais em menos tempo.
 
-Trabalhar com documentos envolve uma série de problemas, o formato do arquivo pode adicionar mais trabalho pra fazer qualquer tipo de manipulação com o documento (.pdf é a tristeza, se tiver em imagem então...), os arquivos podem vir corrompidos, ou simplesmente você pode ter uma quantitade absurda de documentos (lembro de um projeto que o objetivo era colocar em formato de planilha cerca de 17.000 processos judiciários do Conselho Nacional de Justiça - CNJ).
+Trabalhar com documentos envolve uma série de problemas, o formato do arquivo pode adicionar mais trabalho pra fazer qualquer tipo de manipulação com o documento (.pdf é a tristeza, se tiver em imagem então...), os arquivos podem vir corrompidos, ou simplesmente você pode ter uma quantitade absurda de documentos (lembro de um projeto que o objetivo era extrair informações de cerca de 17.000 processos judiciários do Conselho Nacional de Justiça - CNJ).
 
 Mas nem tudo está perdido! Linguagens de programação são desenvolvidas justamente para executar tarefas e solucionar problemas.
 
