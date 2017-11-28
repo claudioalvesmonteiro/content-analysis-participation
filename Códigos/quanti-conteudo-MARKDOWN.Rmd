@@ -13,23 +13,16 @@ text-align: justify}
 
 # INTRODUÇÃO
 
-O que é e como fazer uma análise de conteúdo quantitativa? Este artigo busca responder esta resposta de forma intuitiva levantando os principais conceitos dessa técnica e a executando na prática. Para tal será exposto dois exemplos de análises da Ciência Política envolvendo (1) Análise de reuniões de arenas democráticas (conselhos gestores) e (2) análise de documentos políticos e partidários (manifesto partidário e programa de governo). Toda a análise será feita em linguagem de programação R.
+Como categorizar e analisar documentos de forma automática? Este projeto busca responder esta resposta de forma intuitiva a partir da interação da técnica de *Análise de Conteúdo* com a *Mineração de Texto*, levantando seus principais conceitos e a demonstrando na prática. Para tal será exposto dois exemplos de análises de documentos envolvendo (1) Análise de reuniões de arenas democráticas (conselhos gestores) e (2) análise de documentos políticos e partidários (manifesto partidário e programa de governo). Toda a análise será feita em linguagem de programação R.
 
-# Exemplo 1: Análise de Conteúdo de Espaços Democráticos
+## Preguiça: O motor da programação
 
-## Teoria Democrática
+**Por que aprender linguagem de programação?** A resposta é simples: fazer mais em menos tempo.
 
-O termo Democracia tem origem no grego antigo *demokratía* (governo do povo). Foi criado a partir de *demos* (povo) e *kratos* (poder) no século V a.C. para denotar o sistema de governo vigente na Grécia, mais especificamente no período arcaico ateniense (Braick, 2006). Nesta época todos os indivíduos considerados cidadãos tinham direito a participar da Assembleia, que estabelecia as leis e discutia os problemas da cidade-estado. Com o avanço da história e após crises, guerras, monarcas, a espansão do direito ao voto par maioria da população em democracias a democracia sofre mudanças abruptas. A espansão do direito ao voto par maioria da população em democracias emergentes e o crescimento demográfico tornam fáctivel a democracia representativa, baseada na eleição de representantes que governam e legislam pelo povo (Gomes, 2015).
+Trabalhar com documentos envolve uma série de problemas, o formato do arquivo pode adicionar mais trabalho pra fazer qualquer tipo de manipulação com o documento (.pdf é a tristeza, se tiver em imagem então...), os arquivos podem vir corrompidos, ou simplesmente você pode ter uma quantitade absurda de documentos (lembro de um projeto que o objetivo era colocar em formato de planilha cerca de 17.000 processos judiciários do Conselho Nacional de Justiça - CNJ).
 
-Desde então os estudiosos com suas diferentes perpectivas procuram definir as bases de uma Teoria Democrática, TD para os íntimos. Teóricos e analistas da TD debatem sobre necessidade de se ter uma definição de democracia reestrita, tomando como base as eleições livres e justas e o voto universal, ou ampliando essa definião e incluindo também a liberdade expressão e associação mais o efetivo governo eleito (sem a presença de grupos que impessam o pleno governo democrático). Analisar as relações entre grupos e pessoas em espaços democráticos é essencial para compreender seu funcionamento.
+Mas nem tudo está perdido! Linguagens de programação são desenvolvidas justamente para executar tarefas e solucionar problemas.
 
-## Conselhos Gestores
-
-Em 1988 com o processo de redemocratização no Brasil, o mecanismo de gestão de políticas públicas por conselhos é incluído na constituição e adotado nas diferentes esferas de governo do Estado. Com base em Gomes (2003) um conselho gestor definido como “ um colegiado institucionalizado, composto de um pequeno número de representantes do governo e da sociedade civil, estes designados democraticamente, que é responsável pela gestão de uma política pública”. Estes instituem um espaço democrático que visa atingir 3 objetivos: (1) promover a construção da cidadania e a educação política; (2) viabilizar a identificação e captação permanente das demandas da sociedade; e (3) exercer controle social sobre o governo (GOMES, 2003).
-
-
-
-# REFERÊNCIAS
 
 
 
