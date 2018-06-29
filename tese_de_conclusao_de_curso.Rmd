@@ -3,7 +3,11 @@ title: "Metodologia de Análise da Participação Social em Instituições Delib
 author: "Cláudio A. Monteiro"
 date: "June 29, 2018"
 output: pdf_document
+fontsize: 12pt
+geometry: margin=1in
 ---
+
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
