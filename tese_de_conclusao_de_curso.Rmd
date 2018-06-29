@@ -9,11 +9,22 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## INTRODUÇÃO
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Instituições de participação na gestão pública desempenham um papel crucial no exercício da Democracia. No Brasil pó-ditadura alguns mecanismos dessa natureza foram criados: conselhos gestores, orçamentos participativos, fóruns nacionais, que são instâncias de suma importância para uma maior aproximação dos indivíduos com a execução de políticas públicas no nível local e regional (CONSTITUIÇÃO). Estas instituições viabilizam e identificam demandas da sociedade, promovem a construção da cidadania e da educação política e permitem o controle social sobre as decisões governamentais (GOMES, 2003).
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+</br>
+
+Uma das competências do Ministério do Meio Ambiente (MMA) do Brasil é gerir as Unidades de Conservação (UCs) dentro do território brasileiro, por meio do Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio). Uma Unidade de Conservação é um “espaço territorial e seus recursos ambientais, [...] com características naturais relevantes, legalmente instituído pelo Poder Público, com objetivos de conservação e limites definidos, sob regime especial de administração, ao qual se aplicam garantias adequadas de proteção” (LEI 9.985/2000). Este é um importante instrumento para garantir a preservação da biodiversidade, uso sustentável do meio ambiente, e desenvolvimento das comunidades que ali residem, frente ao consumo e à destruição de habitats naturais pela sociedade.
+
+</br>
+
+Para que a gestão de uma área protegida seja efetiva, é essencial que haja um espaço pelo qual as comunidades que vivem no território participem das decisões sobre a gestão do mesmo, num ambiente de interação com gestores, pesquisadores e profissionais que ali atuam (FERSE et al). No âmbito da política de UCs, é criado o mecanismo de Conselho Gestor, no qual representantes de instituições e grupos locais podem trazer questões para serem debatidas com os gestores da área (conselhos consultivos) e até decidir sobre a execução das políticas (conselhos deliberativos) (ICMBIO CITAR guia).
+
+</br>
+
+Este trabalho se propõe desenvolver uma metodologia de análise de conselhos gestores de áreas protegidas, utilizando software livre. A partir de documentos internos dos conselhos é possível estruturar o texto desses documentos em categorias de análise -- levantadas a partir da literatura adotada -- e posteriormente analisá-las em quantitativamente (frequências de palavras, conexão entre categorias) e qualitativamente (interpretação e mecanismos) (BARDIN). A partir da pergunta “a participação política no conselho é democrática?”, é desenvolvido um desenho para analisar o Conselho Consultivo da Área de Proteção Ambiental Costa dos Corais. Aqui pretende-se orientar outras pesquisas na análise desse importante mecanismo institucional, utilizando a Linguagem R e o pacote RQDA.
+
 
 ```{r cars}
 summary(cars)
