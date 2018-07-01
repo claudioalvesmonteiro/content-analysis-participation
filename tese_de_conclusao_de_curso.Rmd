@@ -9,7 +9,7 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
+# **Metodologia de Análise da Participação Social em Instituições Deliberativas**
 
 ## INTRODUÇÃO
 
@@ -41,7 +41,7 @@ Ambientes de participação política são essenciais para uma aproximação da 
 </br>
 
 ## METODOLOGIA
-A partir das diretrizes de Bardin (ANO) para desenvolver uma análise de conteúdo, é explorada a vias de análise de documentos de Conselhos Gestores de UCs. A Análise de Conteúdo é uma técnica para construir inferências a partir da identificação de características específicas de mensagens e textos, de forma sistemática e objetiva (HOLSTI, 1968). Sob a perspectiva quantitativa a AC tem um caráter objetivo e sistemático, implementando técnicas que busquem a mensuração, na qual se conta a frequência em que palavras ou conjunto de palavras se repetem e sua proximidade (FRANZOSI, 2010). Já a perspectiva qualitativa permite observar o universo do assunto tratado, sob uma abordagem que trata o objeto de uma maneira mais profunda, assim o(a) pesquisador(a) é capaz de construir uma perspectiva mais completa a respeito do objeto de estudo (BERG, 2001). 
+A partir das diretrizes de Bardin (ANO) para desenvolver uma análise de conteúdo, é explorada a vias de análise de documentos de Conselhos Gestores de UCs. A Análise de Conteúdo é uma técnica para construir inferências a partir da identificação de características específicas de mensagens e textos, de forma sistemática e objetiva (HOLSTI, 1968). Sob a perspectiva quantitativa a AC tem um caráter objetivo e sistemático, implementando técnicas que busquem a mensuração, na qual se conta a frequência em que palavras ou conjunto de palavras se repetem e sua proximidade (FRANZOSI, 2010). Já a perspectiva qualitativa permite observar o universo do assunto tratado, sob uma abordagem que trata o objeto de uma maneira mais profunda, assim o(a) pesquisador(a) é capaz de construir uma perspectiva mais completa a respeito do objeto de estudo (BERG, 2001).
 
 </br>
 
@@ -58,14 +58,14 @@ Uma vez que o pesquisador possua uma fonte de informação como entrevistas, ví
 </br>
 
 Tendo definido análise de conteúdo como método, agora precisamos entender um pouco sobre as diferentes abordagens possíveis. A primeira das abordagens seria uma análise de conteúdo de caráter (1) Quantitativo, Berelson (1952) sugeriu " objective, systematic, and quantitative" como forma de se fazer uma análise de conteúdo. Esse método foca sua atenção muito mais no procedimento da análise do que nas características dos dados disponíveis. É comum tentar implementar modelos que busquem a mensuração, onde se contaria a frequência em que palavras ou conjunto de palavras se repetem, sua proximidade, ou ainda outros elementos textuais. A perspectiva quantitativa busca transformar textos em números e saber que dessa forma a abordagem pode esbarrar em uma série de limitações.  
-    
+
 </br>
 
-Outra forma seria a (2) Qualitativa em que seguindo suas diretrizes os pesquisadores conseguiriam observar melhor o universo do assunto tratado. Assim, teriam uma abordagem que olharia o objeto de uma maneira mais profunda e – principalmente – visava a não exclusão de termos não quantificáveis, os pesquisadores seriam capazes de construir  uma  perspectiva mais completa a respeito do objeto de estudo. Do ponto de vista de uma abordagem qualitativa a análise de conteúdo se tornaria uma "opportunity for the investigator to learn about how subjects or the authors of textual. materials view their social worlds. From this perspective, content analysis is not a reductionistic, positivistic approach" (Berg, 1989). 
-    
+Outra forma seria a (2) Qualitativa em que seguindo suas diretrizes os pesquisadores conseguiriam observar melhor o universo do assunto tratado. Assim, teriam uma abordagem que olharia o objeto de uma maneira mais profunda e – principalmente – visava a não exclusão de termos não quantificáveis, os pesquisadores seriam capazes de construir  uma  perspectiva mais completa a respeito do objeto de estudo. Do ponto de vista de uma abordagem qualitativa a análise de conteúdo se tornaria uma "opportunity for the investigator to learn about how subjects or the authors of textual. materials view their social worlds. From this perspective, content analysis is not a reductionistic, positivistic approach" (Berg, 1989).
+
 </br>
 
-Os Conselhos Gestores de UCs devem disponibilizar seus documentos internos para que seja garantida a transparências dessas instituições de gestão pública.  Esses documentos incluem: regimento interno (regula o funcionamento do conselho), ata de presença das reuniões, ata e memória das reuniões (descrevendo o decorrer da reunião), dentre outros. 
+Os Conselhos Gestores de UCs devem disponibilizar seus documentos internos para que seja garantida a transparências dessas instituições de gestão pública.  Esses documentos incluem: regimento interno (regula o funcionamento do conselho), ata de presença das reuniões, ata e memória das reuniões (descrevendo o decorrer da reunião), dentre outros.
 
 </br>
 
@@ -81,10 +81,10 @@ Os Conselhos Gestores de UCs devem disponibilizar seus documentos internos para 
 
 ### 5. Relação entre Grupos e Temas
 
-### 6. 
+### 6.
 
 
 
 </br>
 
-Note that the `echo = FALSE` 
+Note that the `echo = FALSE`
