@@ -73,6 +73,46 @@ Os Conselhos Gestores de UCs devem disponibilizar seus documentos internos para 
 
 ### 1. Presença em Reuniões
 
+Participar do processo deliberativo num conselho gestor é essencial para levantar as questões de interesse de cada representante, também para estar ciente do que está sendo debatido, assim como aprender sobre os processos envolvidos na participação. A análise da presença dos participantes no conselho gestor nos fornece a possibilidade de identificar quais grupos e instituições mais comparecem às reuniões e qual a evolução histórica disso. No exemplo em questão foram utilizados as atas de presença da reunião para reunir as informações de presença de cada conselheiro(a) em cada reunião do Conselho. As informações de presença foram tabuladas em formato Excel e podem ser baixadas [aqui](https://github.com/claudioalvesmonteiro/publicgov_environment/blob/master/apa_costa_dos_corais/data/atas_preseca_apacc.xlsx).
+
+</br>
+
+```{r}
+# baixar dados
+url <- "https://github.com/claudioalvesmonteiro/publicgov_environment/blob/master/apa_costa_dos_corais/data/atas_preseca_apacc.xlsx?raw=true"
+destfile <- "atas_preseca_apacc.xlsx"
+download.file(url, destfile)
+
+# carregar dados
+library(readxl)
+apacc_data <- read_excel("atas_preseca_apacc.xlsx")
+```
+
+Com base nas atas de presença foi possível computar as seguintes informações de cada representante: (1) nome; (2) sexo; (3) presença/ausência na reunião; (4) número da reunião e (5) representante suplente ou titular.{
+
+```{r}
+# contabilizar presenca por instituicao
+presen_insti <- aggregate(apacc_data$presente, by = list(apacc_data$entidade_sigla), sum)
+```
+
+```{r}
+presen_insti <- presen_insti[order(presen_insti$x),]
+presen_insti$Group.1 <- factor(presen_insti$Group.1, levels = presen_insti$x)
+
+# grafico
+ggplot(presen_insti, aes(x = presen_insti$Group.1, y = presen_insti$x))+
+  geom_bar(stat = "identity", fill = "#2c3b3e") +
+  labs(x = "", y = "Número de Presentes", title = "Presença") +
+  geom_label(label = presen_insti$Group.1,size = 2.5, color = "black", fontface = "plain") +
+  theme_arretado()+
+  coord_flip()
+ggsave("Resultados/barra_inst_cat1.png", width = 10, height = 4, units = "in")
+
+```
+
+*Observações do contexto
+- participantes da gestão
+
 ### 2. Temas Debatidos
 
 ### 3. Proporção de Fala
