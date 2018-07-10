@@ -31,12 +31,14 @@ Este trabalho se propõe desenvolver uma metodologia de análise de conselhos ge
 
 ## QUESTÃO DE PESQUISA
 
-[]
+Como analisar a participação social em ambientes deliberativos, usando software livre?
 
 </br>
 
 ## JUSTIFICATIVA
 Ambientes de participação política são essenciais para uma aproximação da gestão da política pública com o público-alvo, identificando as demandas da sociedade, reconhecendo o conhecimento que os que vivem no território possuem sobre o mesmo,  mediando os conflitos entre grupo locais. Conselhos de Unidades de Conservação são marcados por conflitos, que geralmente se dão entre grupos com interesses econômicos na área, gestores públicos, pesquisadores e comunidades locais.  
+
+[PORQUE ELA DEFASADA POR QUE ELA NECESSARIA]
 
 </br>
 
@@ -71,47 +73,72 @@ Os Conselhos Gestores de UCs devem disponibilizar seus documentos internos para 
 
 ## ANÁLISE DE CONTEÚDO EM SOFTWARE LIVRE
 
-### 1. Presença em Reuniões
+### 1. Presença Total em Reuniões
 
 Participar do processo deliberativo num conselho gestor é essencial para levantar as questões de interesse de cada representante, também para estar ciente do que está sendo debatido, assim como aprender sobre os processos envolvidos na participação. A análise da presença dos participantes no conselho gestor nos fornece a possibilidade de identificar quais grupos e instituições mais comparecem às reuniões e qual a evolução histórica disso. No exemplo em questão foram utilizados as atas de presença da reunião para reunir as informações de presença de cada conselheiro(a) em cada reunião do Conselho. As informações de presença foram tabuladas em formato Excel e podem ser baixadas [aqui](https://github.com/claudioalvesmonteiro/publicgov_environment/blob/master/apa_costa_dos_corais/data/atas_preseca_apacc.xlsx).
 
 </br>
 
+#### 1.1 Baixando e carregando os arquivos
+
+Foi possível computar as seguintes informações de cada representante: (1) nome; (2) sexo; (3) presença/ausência na reunião; (4) número da reunião e (5) representante suplente ou titular. Para realizar as análises desta sessão é necessário baixar as bases de exemplo. Segue abaixo o codigo necessario para baixar e carregar a base de dados.
+
+
 ```{r}
 # baixar dados
-url <- "https://github.com/claudioalvesmonteiro/publicgov_environment/blob/master/apa_costa_dos_corais/data/atas_preseca_apacc.xlsx?raw=true"
-destfile <- "atas_preseca_apacc.xlsx"
+url <- "https://github.com/claudioalvesmonteiro/publicgov_environment/blob/master/apa_costa_dos_corais/data/atas_presenca_apacc.xlsx?raw=true"
+destfile <- "atas_presenca_apacc.xlsx"
 download.file(url, destfile)
 
 # carregar dados
 library(readxl)
-apacc_data <- read_excel("atas_preseca_apacc.xlsx")
+apacc_data <- read_excel("atas_presenca_apacc.xlsx")
 ```
 
-Com base nas atas de presença foi possível computar as seguintes informações de cada representante: (1) nome; (2) sexo; (3) presença/ausência na reunião; (4) número da reunião e (5) representante suplente ou titular.{
+#### 1.2 Presença Total por Instituição
 
 ```{r}
 # contabilizar presenca por instituicao
 presen_insti <- aggregate(apacc_data$presente, by = list(apacc_data$entidade_sigla), sum)
+
+# ordenar os nomes das instituicoes com base na presenca
+presen_insti$Group.1  <- factor(presen_insti$Group.1, levels = unique(presen_insti$Group.1[order(presen_insti$x)]), ordered = TRUE)
 ```
+
+```{r,  fig.width=6, fig.height=8}
+# carregar pacote para graficos
+library(ggplot2)
+
+# grafico em ggplot
+ggplot(
+  # selecionar base de dados, eixo x e y
+  presen_insti, aes(x = presen_insti$Group.1, y = presen_insti$x))+ 
+  # define statistica do grafico e cor de preenchimento
+  geom_bar(stat = "identity", fill = "black") +
+  # define titulo dos eixos e grafico
+  labs(x = "", y = "Número de Presentes", title = "Presença das Instituições no Conselho") +
+  #geom_label(label = presen_insti$x, size = 2.5, color = "black", fontface = "plain") +
+  #theme_light()+
+  coord_flip()
+
+# salvar grafico
+ggsave("Resultados/barra_inst_cat1.png", width = 4, height = 8, units = "in")
+```
+
 
 ```{r}
-presen_insti <- presen_insti[order(presen_insti$x),]
-presen_insti$Group.1 <- factor(presen_insti$Group.1, levels = presen_insti$x)
-
-# grafico
-ggplot(presen_insti, aes(x = presen_insti$Group.1, y = presen_insti$x))+
-  geom_bar(stat = "identity", fill = "#2c3b3e") +
-  labs(x = "", y = "Número de Presentes", title = "Presença") +
-  geom_label(label = presen_insti$Group.1,size = 2.5, color = "black", fontface = "plain") +
-  theme_arretado()+
-  coord_flip()
-ggsave("Resultados/barra_inst_cat1.png", width = 10, height = 4, units = "in")
+# importar base de dados das categorias
 
 ```
 
-*Observações do contexto
-- participantes da gestão
+```{r,  fig.width=6, fig.height=8}
+# carregar pacote para graficos
+
+```
+
+#### 1.3 Presença por Grupo Setorial
+
+Cada instituição compõe um grupo setorial que, segundo o próprio Conselho define, são classificadas em (1) Atividade Turística; (2) Atividade Pesqueira; (3) Gestão Pública; (4) ONGs Ambientalistas; (5) Organizações de educação e cultura e associações comunitárias; e (6) Agricultura, Indústria e Comércio. Para tal classificação foram utilizadas as atas de memória onde houveram eleições, com a categorização de cada instituição.
 
 ### 2. Temas Debatidos
 
