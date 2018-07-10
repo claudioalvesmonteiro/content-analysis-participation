@@ -175,19 +175,13 @@ ggplot(presen_grupo, aes(x = presen_grupo$Group.1, y = presen_grupo$x))+
 ggsave("Resultados/barra_inst_cat1.png", width = 6, height = 3, units = "in")
 ```
 
+[+ PROPORCIONAL NUMERO DE ASSENTOS]
 
 ### 2. Temas Debatidos
 
 ### 3. Proporção de Fala
 
-### 4. Proximidade de Grupos
+### 4. Relação entre Grupos e Temas
 
-### 5. Relação entre Grupos e Temas
+### 5. Proximidade entre Grupos
 
-### 6.
-
-
-
-</br>
-
-Note that the `echo = FALSE`
