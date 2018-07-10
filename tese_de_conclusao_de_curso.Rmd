@@ -98,7 +98,7 @@ apacc_data <- read_excel("atas_presenca_apacc.xlsx")
 
 ```{r}
 # baixar dados
-url <- "https://bit.ly/2JbcCyX"
+url <- "https://bit.ly/2m8xhux"
 destfile <- "instituicoes_apacc.xlsx"
 download.file(url, destfile)
 
@@ -142,7 +142,7 @@ ggsave("Resultados/barra_inst_cat1.png", width = 4, height = 8, units = "in")
 
 Cada instituição compõe um grupo setorial que, segundo o próprio Conselho define, são classificadas em (1) Atividade Turística; (2) Atividade Pesqueira; (3) Gestão Pública; (4) ONGs Ambientalistas; (5) Organizações de educação e cultura e associações comunitárias; e (6) Agricultura, Indústria e Comércio. Para tal classificação foram utilizadas as atas de memória onde houveram eleições, com a categorização de cada instituição.
 
-```{r}
+```{r,  fig.width=6, fig.height=3}
 # transformar em caixa alta e mergir colunas
 presen_insti$entidade_sigla <- toupper(presen_insti$Group.1)
 
@@ -152,8 +152,27 @@ cat_grupo <- apacc_insti[!duplicated(apacc_insti$entidade_sigla),-c(1)]
 # mergir informacoes
 apacc_pres_grupo <- merge(presen_insti, cat_grupo, by = "entidade_sigla", all = T)
 
-#
+# somar presencar por grupo setorial
+presen_grupo <- aggregate(apacc_pres_grupo$x, 
+                by = list(apacc_pres_grupo$categoria1), sum)
 
+# alterar nome para plotagem 
+presen_grupo$Group.1[7] <- "Organizações de educação e cultura \n e associações comunitárias"
+
+# ordenar base para plotagem
+presen_grupo$Group.1  <- factor(presen_grupo$Group.1, 
+                         levels = presen_grupo$Group.1[order(presen_grupo$x)])
+
+
+# grafico 
+ggplot(presen_grupo, aes(x = presen_grupo$Group.1, y = presen_grupo$x))+ 
+  geom_bar(stat = "identity", fill = "black") +
+  labs(x = "", y = "Número de Presentes",
+       title = "Presença das Grupos Setoriais no Conselho") +
+  coord_flip()
+
+# salvar grafico
+ggsave("Resultados/barra_inst_cat1.png", width = 6, height = 3, units = "in")
 ```
 
 
