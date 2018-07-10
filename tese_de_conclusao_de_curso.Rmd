@@ -86,7 +86,7 @@ Foi possível computar as seguintes informações de cada representante: (1) nom
 
 ```{r}
 # baixar dados
-url <- "https://github.com/claudioalvesmonteiro/publicgov_environment/blob/master/apa_costa_dos_corais/data/atas_presenca_apacc.xlsx?raw=true"
+url <- "https://bit.ly/2zrirIX"
 destfile <- "atas_presenca_apacc.xlsx"
 download.file(url, destfile)
 
@@ -95,14 +95,27 @@ library(readxl)
 apacc_data <- read_excel("atas_presenca_apacc.xlsx")
 ```
 
+
+```{r}
+# baixar dados
+url <- "https://bit.ly/2JbcCyX"
+destfile <- "instituicoes_apacc.xlsx"
+download.file(url, destfile)
+
+# carregar dados
+apacc_insti <- read_excel("instituicoes_apacc.xlsx")
+```
+
 #### 1.2 Presença Total por Instituição
 
 ```{r}
 # contabilizar presenca por instituicao
-presen_insti <- aggregate(apacc_data$presente, by = list(apacc_data$entidade_sigla), sum)
+presen_insti <- aggregate(apacc_data$presente, 
+                by = list(apacc_data$entidade_sigla), sum)
 
 # ordenar os nomes das instituicoes com base na presenca
-presen_insti$Group.1  <- factor(presen_insti$Group.1, levels = unique(presen_insti$Group.1[order(presen_insti$x)]), ordered = TRUE)
+presen_insti$Group.1  <- factor(presen_insti$Group.1, 
+                         levels = unique(presen_insti$Group.1[order(presen_insti$x)]), ordered = TRUE)
 ```
 
 ```{r,  fig.width=6, fig.height=8}
@@ -116,29 +129,33 @@ ggplot(
   # define statistica do grafico e cor de preenchimento
   geom_bar(stat = "identity", fill = "black") +
   # define titulo dos eixos e grafico
-  labs(x = "", y = "Número de Presentes", title = "Presença das Instituições no Conselho") +
-  #geom_label(label = presen_insti$x, size = 2.5, color = "black", fontface = "plain") +
-  #theme_light()+
+  labs(x = "", y = "Número de Presentes",
+       title = "Presença das Instituições no Conselho") +
+  # virar coordenadas
   coord_flip()
 
 # salvar grafico
 ggsave("Resultados/barra_inst_cat1.png", width = 4, height = 8, units = "in")
 ```
 
-
-```{r}
-# importar base de dados das categorias
-
-```
-
-```{r,  fig.width=6, fig.height=8}
-# carregar pacote para graficos
-
-```
-
 #### 1.3 Presença por Grupo Setorial
 
 Cada instituição compõe um grupo setorial que, segundo o próprio Conselho define, são classificadas em (1) Atividade Turística; (2) Atividade Pesqueira; (3) Gestão Pública; (4) ONGs Ambientalistas; (5) Organizações de educação e cultura e associações comunitárias; e (6) Agricultura, Indústria e Comércio. Para tal classificação foram utilizadas as atas de memória onde houveram eleições, com a categorização de cada instituição.
+
+```{r}
+# transformar em caixa alta e mergir colunas
+presen_insti$entidade_sigla <- toupper(presen_insti$Group.1)
+
+# criar base de categorias das instituicoes
+cat_grupo <- apacc_insti[!duplicated(apacc_insti$entidade_sigla),-c(1)]
+
+# mergir informacoes
+apacc_pres_grupo <- merge(presen_insti, cat_grupo, by = "entidade_sigla", all = T)
+
+#
+
+```
+
 
 ### 2. Temas Debatidos
 
