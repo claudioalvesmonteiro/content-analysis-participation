@@ -129,13 +129,12 @@ ggplot(
   # define statistica do grafico e cor de preenchimento
   geom_bar(stat = "identity", fill = "black") +
   # define titulo dos eixos e grafico
-  labs(x = "", y = "Número de Presentes",
-       title = "Presença das Instituições no Conselho") +
+  labs(x = "", y = "Número de Presentes") +
   # virar coordenadas
   coord_flip()
 
 # salvar grafico
-ggsave("Resultados/barra_inst_cat1.png", width = 4, height = 8, units = "in")
+ggsave("Resultados/barra_instituicoes.png", width = 4, height = 8, units = "in")
 ```
 
 #### 1.3 Presença por Grupo Setorial
@@ -162,17 +161,15 @@ presen_grupo$Group.1[7] <- "Organizações de educação e cultura \n e associa�
 # ordenar base para plotagem
 presen_grupo$Group.1  <- factor(presen_grupo$Group.1, 
                          levels = presen_grupo$Group.1[order(presen_grupo$x)])
-
-
-# grafico 
+# grafico
 ggplot(presen_grupo, aes(x = presen_grupo$Group.1, y = presen_grupo$x))+ 
   geom_bar(stat = "identity", fill = "black") +
-  labs(x = "", y = "Número de Presentes",
-       title = "Presença das Grupos Setoriais no Conselho") +
+  geom_label(aes(label = x), size = 3.5)+
+  labs(x = "", y = "Número de Presentes") +
   coord_flip()
 
 # salvar grafico
-ggsave("Resultados/barra_inst_cat1.png", width = 6, height = 3, units = "in")
+ggsave("Resultados/presenca_grupo_setor.png", width = 6, height = 3, units = "in")
 ```
 
 [+ PROPORCIONAL NUMERO DE ASSENTOS]
@@ -184,12 +181,18 @@ ggsave("Resultados/barra_inst_cat1.png", width = 6, height = 3, units = "in")
 RQDA é um pacote R para performar análises de dados qualitativas, mais especificamente para análise de textos. Sua principal funcionalidade é a codificação de textos, em que no caso aqui apresentado servirá para identificar (1) temas de debate nas reuniões, (2) situações de fala dos representantes. Com a incorporação de outras técnicas como análise de redes podemos identificar também a proximidade entre grupos e temas específicos. Abaixo segue orientações de como utilizar o pacote e em seguida alguns exemplos 
 
 ```{r, eval = F}
-# instalar e carregar o pacote
-install.packages("RQDA")
-library(RQDA)
+# instalar e carregar pacotes
+install.packages(c("RQDA", "readxl", "readr", "stringi", "stringr", "plyr", "dplyr", "ggplot2"))
 
 # execute o pacote
+library(RQDA)
 RQDA()
+```
+
+```{r}
+# carregar demais pacotes
+library(RQDA); library(readxl); library(readr); library(stringi); library(stringr);
+library(plyr); library(dplyr); library(ggplot2)
 ```
 
 Após carregar e executar o pacote, será berta uma janela externa. Crie um novo projeto e nomei-o como desejar.
@@ -202,11 +205,109 @@ Em seguido será mostrado as opções do projeto. Vá em "Files" e em seguida im
 ![](imagens/tela3.png)
 Após importado os arquivos vá em codes e crie os códigos necessários para sua análise. No caso implementado foram utilizados códigos relativos aos temas de debate e também cada representante recebeu um código, de forma que ao final da codificação haja uma contagem de quantas vezes foram debatidos cada tema e quantas vezes cada representante levantou voz no Conselho. Para codificar, selecione com o cursor do mouse o texto para codificação e clique em "Mark".
 
+![](imagens/tela4.png)
+![](imagens/tela5.png)
 
 
-### 3. Proporção de Fala
+### 2.1 Saliência de Temas
 
-### 4. Relação entre Grupos e Temas
+Após as codificações completadas as codificações dos temas debatidos nas reuniões, é possível responder à pergunta "quais são os temas mais e menos debatidos nas reuniões do Conselho". Essa informação reflete qual o foco do Conselho de modo a identificar quais temas são mais salientes ou problemáticos para os atores do contexto em questão. Abaixo seguem os códigos necessários para capturar as informações relativas aos códigos.
 
-### 5. Proximidade entre Grupos
+```{r, eval = FALSE, echo=FALSE, results='hide',message=FALSE}
+# salvar codigos em arquivo para leitura markdown
+sumario_cod <- summaryCodings()
+cont_cod_data <- data.frame(sumario_cod$NumOfCoding)
+write.csv(cont_cod_data, "Dados/cont_cod_data.csv", row.names = F)
+```
+
+```{r, eval = FALSE}
+# capturar informacoes dos codigos
+sumario_cod <- summaryCodings()
+
+# selecionar contagem de cada codigo
+cont_cod_data <- data.frame(sumario_cod$NumOfCoding)
+```
+
+```{r, echo=FALSE, results='hide',message=FALSE}
+cont_cod_data <- read_csv("Dados/cont_cod_data.csv")
+```
+
+```{r}
+# selecionar codigos relativos ao tema 
+# (durante a codificacao foi usado o termo 'tema_' para ajudar na separacao das informacoes)
+cont_cod_tema <- cont_cod_data[str_detect(cont_cod_data$Var1, "tema_"),]
+
+# visualizar base
+cont_cod_tema
+
+# criar variavel de  proporcao de cada tema em relacao ao total
+cont_cod_tema <- mutate(cont_cod_tema, prop_tema = round((Freq / sum(Freq))*100, 2) )
+
+# ordenar os valores
+cont_cod_tema$Var1 <- factor(cont_cod_tema$Var1, 
+                             levels = cont_cod_tema$Var1[order(cont_cod_tema$prop_tema)])
+
+# visualizar graficamente e salvar
+ggplot(cont_cod_tema, aes(x = Var1, y = prop_tema))+
+  geom_bar(stat = "identity", fill = "#15041c") +
+  geom_label(aes(x = Var1, y = prop_tema, label = prop_tema), size = 3.5)+
+  labs(y = "Procentagem do Total", x = "", title = "") +
+  coord_flip()
+
+ggsave("prop_debate_tema.png", path = "resultados",width = 7, height = 3, units = "in")
+```
+
+### 2.2 Proporção de Fala
+
+Outra possibilidade é a contagem de situções de fala por grupo de interesse. Isso é de extrema importância e uma análise inovadora visto que a maioria das análises de participação consideram apenas a presença dos representantes em plenária, enquanto a preponderância da fala fica à margem. A fala assume um caráter essencial no debate público, visto que é a partir da racionalização discursiva e do processo comunicativo que os atores conseguem chegar a decisões coletivas (HABERMAS).
+
+```{r}
+# selecionar codigos que nao sao de representantes 
+paste_voz<- c("cat_", "tema_", "DESTAQUES", "DUVIDA_", "atua_", "DECISOES", "termo_", "tema2_", "IDENT_MEMO")
+cont_cod_rep <- cont_cod_data[!str_detect(cont_cod_data$Var1, paste(paste_voz, collapse = '|')),] 
+
+# Carregar base de dados de conselheiros e categorias das suas respectivas intituicoes
+representantes_instituicoes_apacc <- read_excel("Dados/representantes_instituicoes_apacc.xlsx")
+
+# padronizar nomes
+cleanString <- function(x){
+  library(plyr); library(stringi); library(stringr)
+  x_mani = stri_trans_general(x, "Latin-ASCII")%>%
+    str_replace_all("_", " ")%>%
+    tolower()
+  return(x_mani)
+}
+
+representantes_instituicoes_apacc$nome_consel <- cleanString(representantes_instituicoes_apacc$nome_consel)
+cont_cod_rep$nome_consel <- cleanString(cont_cod_rep$Var1)
+
+# mergir bases
+participaData <- merge(cont_cod_rep, representantes_instituicoes_apacc, by = "nome_consel") 
+
+# retirar contagem do presidente do conselho e dos analistas*
+participaData <- participaData[participaData$entidade_sigla != "ICMBIO",]
+
+# contagem por grupo
+participa_cont <- aggregate(participaData$Freq, by=list(Category=participaData$categoria1), FUN=sum)
+
+# renomear para grafico
+participa_cont$Category <- as.character(participa_cont$Category)
+participa_cont$Category[6] <- "Organizações de educação e cultura \n e associações comunitárias"
+
+# ordenar
+participa_cont$Category <- factor(participa_cont$Category, 
+                              levels = participa_cont$Category[order(participa_cont$x)])
+# grafico comparativo
+ggplot(participa_cont, aes(x = Category, y = x))+
+  geom_bar(stat = "identity", fill = "#15041c") +
+  geom_label(aes(label = x), size = 3.5)+
+  labs(y = "Número de Situações de Fala", x = "", title = "") +
+  coord_flip()
+ggsave("prop_voz_cat.png", path = "Resultados", width = 8, height = 3, units = "in")
+
+```
+
+### 2.3 Relação entre Grupos e Temas
+
+### 2.4 Proximidade entre Grupos
 
