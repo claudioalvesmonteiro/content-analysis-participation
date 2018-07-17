@@ -177,7 +177,24 @@ ggsave("Resultados/barra_inst_cat1.png", width = 6, height = 3, units = "in")
 
 [+ PROPORCIONAL NUMERO DE ASSENTOS]
 
-### 2. Temas Debatidos
+
+
+### 2. Possibilidades de Análise com o pacote RQDA
+
+RQDA é um pacote R para performar análises de dados qualitativas, mais especificamente para análise de textos. Sua principal funcionalidade é a codificação de textos, em que no caso aqui apresentado servirá para identificar (1) temas de debate nas reuniões, (2) situações de fala dos representantes. Com a incorporação de outras técnicas como análise de redes podemos identificar também a proximidade entre grupos e temas específicos. Abaixo segue orientações de como utilizar o pacote e em seguida alguns exemplos 
+
+```{r, eval = F}
+# instalar e carregar o pacote
+install.packages("RQDA")
+library(RQDA)
+
+# execute o pacote
+RQDA()
+```
+
+Após carregar e executar o pacote, será berta uma janela externa:
+
+
 
 ### 3. Proporção de Fala
 
