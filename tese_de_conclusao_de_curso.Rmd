@@ -192,9 +192,15 @@ library(RQDA)
 RQDA()
 ```
 
-Após carregar e executar o pacote, será berta uma janela externa:
+Após carregar e executar o pacote, será berta uma janela externa. Crie um novo projeto e nomei-o como desejar.
 
 
+![](imagens/tela1.png)
+Em seguido será mostrado as opções do projeto. Vá em "Files" e em seguida importe o arquivo .txt que será analisado.
+
+![](imagens/tela2.png)
+![](imagens/tela3.png)
+Após importado os arquivos vá em codes e crie os códigos necessários para sua análise. No caso implementado foram utilizados códigos relativos aos temas de debate e também cada representante recebeu um código, de forma que ao final da codificação haja uma contagem de quantas vezes foram debatidos cada tema e quantas vezes cada representante levantou voz no Conselho. 
 
 ### 3. Proporção de Fala
 
