@@ -349,7 +349,7 @@ regNum <- function(string){
 }
 
 #===== funcao para padronizar base de dados =====#
-dataNetworkProcess <- function(matrix, dataGrupo, grupo = 1){
+dataNetworkProcess <- function(matrix, dataGrupo, grupo = 2){
   # tranformar em banco de dados
   data = data.frame(as.table(matrix))   
   # criar base com nomes, numeros dos codigos e grupos
@@ -367,8 +367,10 @@ dataNetworkProcess <- function(matrix, dataGrupo, grupo = 1){
     # mergir infos
     dataGrupo$nome_consel = cleanString(dataGrupo$nome_consel)
     code_names$nome_consel = cleanString(code_names$code_nome)
-    code_names = merge(code_names, dataGrupo, by = "nome_consel")
+    code_names = merge(code_names, dataGrupo, by = "nome_consel", all = T)
+    code_names = code_names[!is.na(code_names$code_full),]
     code_names$grupo = code_names$categoria1
+    code_names$grupo[is.na(code_names$grupo)] <- "ATUAÇÃO"
   }
   # remover casos NA e 0 da base
   data = data[!is.na(data$Freq),]        
@@ -389,22 +391,22 @@ dataNetwork$IDtarget <- match(dataNetwork$Var2, code_names$code_num)-1
 
 # remover nodes sem conexoes
 dataNetwork$code_full = dataNetwork$Var1
-code_namesx <- merge(code_names, dataNetwork, by = "code_full")[,c(1, 2, 3, 4)]
+code_namesx <- merge(code_names, dataNetwork, by = "code_full")
 code_namesx <- code_namesx[!duplicated(code_namesx$code_full),]
 code_namesx$code_full <- as.character(code_namesx$code_full)
 
 # definir cores dos nodes
-if (grupo == 1){
-  ColourScale <- 'd3.scaleOrdinal()
-  .domain(["Atuação nos Debates", "Representante"])
-  .range(["#FF6900", "#694489"]);' 
-}
+#if (grupo == 1){
+#  ColourScale <- 'd3.scaleOrdinal()
+#  .domain(["Atuação nos Debates", "Representante"])
+#  .range(["#FF6900", "#694489"]);' 
+#}
 
-if (grupo == 2){
-  ColourScale <- 'd3.scaleOrdinal()
-  .domain(["Gestão Pública", "ONGs Ambientalistas", "Atividade Turística", "Organizações de educação e cultura e associações comunitárias", "Atividade Pesqueira", "Instituição de Ensino e Pesquisa", "Agricultura, Indústria e Comércio"])
-  .range(["#FF6900", "#694489", "#495969", "#800000", "#cd83de", "#5cb85c", "#be9b7b"]);' 
-}
+#if (grupo == 2){
+ColourScale <- 'd3.scaleOrdinal()
+.domain(["ATUAÇÃO","Gestão Pública", "ONGs Ambientalistas", "Atividade Turística", "Organizações de educação e cultura e associações comunitárias", "Atividade Pesqueira", "Instituição de Ensino e Pesquisa", "Agricultura, Indústria e Comércio"])
+.range(["#800000","#FF6900", "#694489", "#495969", "#800000", "#cd83de", "#5cb85c", "#be9b7b"]);' 
+#}
 
 #===== NETWORK3 ======#
 library(networkD3)
@@ -414,6 +416,8 @@ network_rep_atua <- forceNetwork(dataNetwork, Nodes = code_names,
                                  opacityNoHover = 1, linkDistance = 300, opacity = 1, legend = T,  
                                  height = 800, width = 1200, zoom = TRUE , fontSize = 12,
                                  fontFamily = "serif", colourScale = JS(ColourScale) )
+
+network_rep_atua
 
 saveNetwork(network_rep_atua, file = 'network_rep_atua.html', selfcontained=TRUE)
 ```
