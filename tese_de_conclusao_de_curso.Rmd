@@ -307,7 +307,127 @@ ggsave("prop_voz_cat.png", path = "Resultados", width = 8, height = 3, units = "
 
 ```
 
-### 2.3 Relação entre Grupos e Temas
+### 2.3 
+
+### 2.3 Relação entre Conselheiros e Atuação Política
+
+Uma outra possibilidade de análise é identificar a relação entre grupos e temas. Isso demonstra não só o nível de engajamento dos grupos mas em quais temas e interesses cada grupo direciona seu poder de atuação. A partir da identificação dos principais interesses em jogo no Conselho, a partir da literatura e de trabalhos qualitativos com os conselheiros, foi possível identificar as atuações no sentido da (1) conservação do meio ambiente, (2) desenvolvimento do turismo local e (3) proteção e desenvolvimento da atividade pesqueira.
+
+"Heriberto, Marcelo, Iran, Bruno, Karine foram alguns dos conselheiros que se expressaram contra a liberação de mais uma piscina para visitação, salientando a saturação da área de Maragogi como motivo."
+
+```{r}
+# selecionar codigos de conselheiros e atuacao
+paste_atua <- c("cat_", "tema_", "DESTAQUES", "DUVIDA_", "DECISOES", "termo_", "tema2_", "_1", "IDENT_MEMO")
+code_atua <- cont_cod_data$Var1[!str_detect(cont_cod_data$Var1, paste(paste_atua, collapse = '|'))]
+code_atua <- as.character(code_atua)
+
+# capturar relacoes de inclusao
+include_matrix <- crossCodes(codeList = code_atua, 
+                           data = coding_table, 
+                           relation = "inclusion")
+
+# funcao para padronizar base de dados
+matrix <- include_matrix
+dataNetworkProcess <- function(matrix){
+  data = data.frame(as.table(matrix))    # tranformar em banco de dados
+  # criar base com nomes e numeros dos codigos
+  code_names = data.frame(code_full = data$Var1[!duplicated(data$Var1)], code_num = "", code_nome = "")
+  
+  #
+  data = data[!is.na(data$Freq),]        # remover NAs
+  data = data[data$Freq != 0,]           # remover casos sem relacao
+  # 
+  
+  
+}
+
+# capturar numero dos codigos
+cod_seq <- regmatches(dataAtua$Var1, gregexpr("[[:digit:]]+", dataAtua$Var1))
+dataAtua$nod_cod <- as.numeric(unlist(cod_seq))
+
+# transformar variaveis
+dataAtua$Var2 <- as.numeric(as.character(dataAtua$Var2))
+dataAtua$Var1 <- as.character(dataAtua$Var1)
+
+# definir nomes dos nodes
+nomes2 <- data.frame(nome_nod = code_atua)
+nomes2$nome_nod <- as.character(nomes2$nome_nod)
+
+flow_unique2 <- dataAtua[!duplicated(dataAtua$Var1),]
+
+# limpar base
+dataAtua <- mutate(dataAtua, clean = ifelse(Var2 == nod_cod | is.na(Freq), 1, 0))
+dataAtua <- dataAtua[dataAtua$clean == 0,]
+
+# function to create merge string based on similarity
+best_match= function(string_vector,string_replacement){
+  library(stringi)
+  s<-string_replacement %>% 
+    purrr::map_int(~{
+      .x %>% 
+        RecordLinkage::levenshteinSim(string_vector) %>%
+        match(max(.),.)
+    })
+  string_vector[s] = string_replacement
+  return(string_vector)
+}
+
+flow_unique2$nome_nod <- best_match(as.character(flow_unique2$Var1), nomes2$nome_nod)
+
+# mergir nome e numero dos codigos
+nomes2 <- merge(flow_unique2, nomes2, by = "nome_nod")
+
+# definir grupos*****
+nomes2 <- mutate(nomes2, grupos = NA)
+nomes2$grupos[str_detect(nomes2$nome_nod, "atua_")] <- "Atuação nos Debates" 
+nomes2$grupos[is.na(nomes2$grupos)] <- "Representante" 
+
+# criar IDs
+dataAtua$IDsource = match(dataAtua$nod_cod, nomes2$nod_cod)-1 
+dataAtua$IDtarget = match(dataAtua$Var2, nomes2$nod_cod)-1
+
+# selecionar relacoes entre representantes e atuacao ##
+dataAtua <- mutate(dataAtua, IN = NA)
+dataAtua$IN[str_detect(dataAtua$Var1, "atua_")] <- "ATUA" 
+dataAtua$IN[is.na(dataAtua$IN)] <- "REP" 
+
+dataAtua <- mutate(dataAtua, OUT = "")
+paste2_atua <- nomes2$nod_cod[nomes2$grupos == "Atuação nos Debates"]
+paste2_rep <- nomes2$nod_cod[nomes2$grupos == "Representante"]
+dataAtua$OUT[str_detect(dataAtua$Var2, paste(paste2_atua, collapse = '|'))] <- "ATUA"
+dataAtua$OUT[str_detect(dataAtua$Var2, paste(paste2_rep, collapse = '|'))] <- "REP"
+
+dataAtua <- mutate(dataAtua, select = ifelse(IN == OUT, 1, 0))
+dataAtua <- dataAtua[dataAtua$select == 0,]
+
+
+# 
+mani1 <- as.factor(dataAtua$Var1)
+mani1 <- data.frame(Var1 = levels(mani1))
+mani1$Var1 <- as.character(mani1$Var1) 
+nomes3 <- merge(mani1, nomes2, by = "Var1")
+
+#
+
+ColourScale <- 'd3.scaleOrdinal()
+.domain(["Atuação nos Debates", "Representante"])
+.range(["#FF6900", "#694489"]);'
+
+
+#===== NETWORK3 ======#
+network_rep_atua <- 
+  forceNetwork(dataAtua, Nodes = nomes2, Source = "IDsource",  Target = "IDtarget",
+               Value = "Freq",  NodeID = "nome_nod",  Group = "grupos",
+               opacityNoHover = 1, linkDistance = 300, opacity = 1, legend = T,  
+               height = 700, width = 700, zoom = TRUE , fontSize = 12,                                                    
+               fontFamily = "serif", colourScale = JS(ColourScale) )
+network_rep_atua
+
+saveNetwork(network_rep_atua, file = 'network_rep_atua.html', selfcontained=TRUE)
+getwd()
+
+```
+
 
 ### 2.4 Proximidade entre Grupos
 
