@@ -3,9 +3,9 @@ title: "Metodologia de Análise da Participação Social em Instituições Delib
 author: "Cláudio A. Monteiro"
 date: "29 de Junho, 2018"
 output:
-  pdf_document: default
   html_document:
     df_print: paged
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -86,7 +86,7 @@ Participar do processo deliberativo num conselho gestor é essencial para levant
 Foi possível computar as seguintes informações de cada representante: (1) nome; (2) sexo; (3) presença/ausência na reunião; (4) número da reunião e (5) representante suplente ou titular. Para realizar as análises desta sessão é necessário baixar as bases de exemplo. Segue abaixo o codigo necessario para baixar e carregar a base de dados.
 
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 # baixar dados
 url <- "https://bit.ly/2zrirIX"
 destfile <- "atas_presenca_apacc.xlsx"
@@ -98,7 +98,7 @@ apacc_data <- read_excel("atas_presenca_apacc.xlsx")
 ```
 
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 # baixar dados
 url <- "https://bit.ly/2m8xhux"
 destfile <- "instituicoes_apacc.xlsx"
@@ -110,7 +110,7 @@ apacc_insti <- read_excel("instituicoes_apacc.xlsx")
 
 #### 1.2 Presença Total por Instituição
 
-```{r}
+```{r,warning=FALSE, message=FALSE}
 # contabilizar presenca por instituicao
 presen_insti <- aggregate(apacc_data$presente, 
                 by = list(apacc_data$entidade_sigla), sum)
@@ -191,7 +191,7 @@ library(RQDA)
 RQDA()
 ```
 
-```{r, warning=FALSE}
+```{r, warning=FALSE, message=FALSE}
 # carregar demais pacotes
 library(readxl); library(readr); library(stringi); library(stringr);
 library(plyr); library(dplyr); library(ggplot2); library(RQDA)
@@ -332,6 +332,7 @@ include_matrix <- crossCodes(codeList = code_atua,
                            data = coding_table, 
                            relation = "inclusion")
 ```
+
 ```{r, results='hide',message=FALSE, warning=FALSE, eval=FALSE}
 matrix <- include_matrix
 grupo = 2
