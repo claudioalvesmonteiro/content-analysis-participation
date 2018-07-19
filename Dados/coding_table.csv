@@ -38,6 +38,7 @@
 83,48,13,"carolina_neves_souza","Memória_reunião_6_coded",2880,2894,14
 84,47,13,"iran_campello_normande","Memória_reunião_6_coded",2821,2835,14
 85,15,13,"alberto_rodrigues","Memória_reunião_6_coded",2837,2854,17
+86,44,13,"aline_santos_1","Memória_reunião_6_coded",2404,2416,12
 87,45,13,"camila_keiko_1","Memória_reunião_6_coded",2505,2517,12
 88,19,13,"cláudio_fabi_1","Memória_reunião_6_coded",4217,4230,13
 89,32,13,"monica_dorigo_correa","Memória_reunião_6_coded",4993,5006,13
@@ -62,7 +63,7 @@
 113,29,13,"eduardo_almeida_machado_1","Memória_reunião_6_coded",10541,10557,16
 114,29,13,"eduardo_almeida_machado_1","Memória_reunião_6_coded",10068,10083,15
 115,62,13,"tema_Educação_Ambiental","Memória_reunião_6_coded",10379,10760,381
-116,59,13,"tema_Ficalização_e_Regulação","Memória_reunião_6_coded",10769,11616,847
+116,59,13,"tema_Fiscalização_e_Regulação","Memória_reunião_6_coded",10769,11616,847
 117,18,13,"cat_COOPERAÇÃO","Memória_reunião_6_coded",10770,11142,372
 119,29,13,"eduardo_almeida_machado_1","Memória_reunião_6_coded",11155,11171,16
 120,56,13,"tema_Zoneamento","Memória_reunião_6_coded",11869,12447,578
@@ -79,7 +80,7 @@
 133,19,1,"cláudio_fabi_1","Memória_reunião_8_coded",4014,4027,13
 134,29,24,"eduardo_almeida_machado_1","Memória_reunião_3_coded",254,270,16
 139,21,24,"marcelo_bastos_françoso","Memória_reunião_3_coded",2051,2067,16
-148,59,24,"tema_Ficalização_e_Regulação","Memória_reunião_3_coded",4488,4691,203
+148,59,24,"tema_Fiscalização_e_Regulação","Memória_reunião_3_coded",4488,4691,203
 157,42,24,"DECISOES","Memória_reunião_3_coded",5829,5988,159
 158,66,24,"jovina_flores_1","Memória_reunião_3_coded",4507,4520,13
 159,55,24,"juliano_mauricio_fritscher","Memória_reunião_3_coded",4555,4573,18
@@ -98,7 +99,7 @@
 180,47,12,"iran_campello_normande","Memória_reunião_5_coded",3681,3699,18
 181,32,12,"monica_dorigo_correa","Memória_reunião_5_coded",4151,4171,20
 186,57,12,"cat_CONFLITO","Memória_reunião_5_coded",4126,7915,3789
-187,59,12,"tema_Ficalização_e_Regulação","Memória_reunião_5_coded",4126,7915,3789
+187,59,12,"tema_Fiscalização_e_Regulação","Memória_reunião_5_coded",4126,7915,3789
 188,68,12,"vanderley_luis_turatti","Memória_reunião_5_coded",4477,4497,20
 192,15,12,"alberto_rodrigues","Memória_reunião_5_coded",5365,5384,19
 193,73,12,"paulo_amaro_da_silva","Memória_reunião_5_coded",5540,5545,5
@@ -137,17 +138,17 @@
 269,18,17,"cat_COOPERAÇÃO","Memória_reunião_14_coded",2340,2568,228
 270,18,17,"cat_COOPERAÇÃO","Memória_reunião_14_coded",2569,2827,258
 271,65,17,"termo_TURISMO","Memória_reunião_14_coded",2569,2827,258
-272,59,17,"tema_Ficalização_e_Regulação","Memória_reunião_14_coded",2828,3220,392
+272,59,17,"tema_Fiscalização_e_Regulação","Memória_reunião_14_coded",2828,3220,392
 274,18,17,"cat_COOPERAÇÃO","Memória_reunião_14_coded",2828,3220,392
 275,18,17,"cat_COOPERAÇÃO","Memória_reunião_14_coded",3222,4667,1445
-276,59,17,"tema_Ficalização_e_Regulação","Memória_reunião_14_coded",3222,4667,1445
+276,59,17,"tema_Fiscalização_e_Regulação","Memória_reunião_14_coded",3222,4667,1445
 277,5,17,"cat_PLURALIDADE_IGUALDADE","Memória_reunião_14_coded",4668,5022,354
 278,18,17,"cat_COOPERAÇÃO","Memória_reunião_14_coded",5023,5345,322
 279,62,17,"tema_Educação_Ambiental","Memória_reunião_14_coded",5023,5345,322
 280,28,17,"tema_Recursos_Financeiros","Memória_reunião_14_coded",5346,5619,273
 282,57,17,"cat_CONFLITO","Memória_reunião_14_coded",5618,5963,345
 284,65,17,"termo_TURISMO","Memória_reunião_14_coded",5619,5964,345
-285,59,17,"tema_Ficalização_e_Regulação","Memória_reunião_14_coded",5965,6605,640
+285,59,17,"tema_Fiscalização_e_Regulação","Memória_reunião_14_coded",5965,6605,640
 286,56,17,"tema_Zoneamento","Memória_reunião_14_coded",5965,6605,640
 287,18,17,"cat_COOPERAÇÃO","Memória_reunião_14_coded",6606,6986,380
 291,18,17,"cat_COOPERAÇÃO","Memória_reunião_14_coded",6987,7474,487
@@ -155,14 +156,14 @@
 297,18,17,"cat_COOPERAÇÃO","Memória_reunião_14_coded",10292,10789,497
 300,18,17,"cat_COOPERAÇÃO","Memória_reunião_14_coded",12194,12385,191
 302,4,3,"paulo_roberto_corrêa_de_souza_júnior","Memória_reunião_18_coded",571,608,37
-303,77,3,"tertuliana_flávia_cavalcanti_do_rêgo","Memória_reunião_18_coded",721,739,18
+303,77,3,"tertuliana_flávia_calvancante_do_rêgo","Memória_reunião_18_coded",721,739,18
 304,17,3,"cat_PUBLICIDADEeTRANSP_CONAPAC","Memória_reunião_18_coded",851,1003,152
 306,39,3,"josé_ulisses_dos_santos","Memória_reunião_18_coded",1057,1081,24
 307,47,3,"iran_campello_normande","Memória_reunião_18_coded",1401,1414,13
 311,48,3,"carolina_neves_souza","Memória_reunião_18_coded",2116,2130,14
 313,18,3,"cat_COOPERAÇÃO","Memória_reunião_18_coded",2388,2842,454
 314,50,3,"termo_MANGUE","Memória_reunião_18_coded",2847,4869,2022
-316,59,3,"tema_Ficalização_e_Regulação","Memória_reunião_18_coded",2847,4869,2022
+316,59,3,"tema_Fiscalização_e_Regulação","Memória_reunião_18_coded",2847,4869,2022
 317,57,3,"cat_CONFLITO","Memória_reunião_18_coded",2847,4869,2022
 319,42,3,"DECISOES","Memória_reunião_18_coded",3701,4270,569
 320,22,3,"andréa_olinto","Memória_reunião_18_coded",4488,4502,14
@@ -194,12 +195,12 @@
 359,47,3,"iran_campello_normande","Memória_reunião_18_coded",12590,12604,14
 362,5,3,"cat_PLURALIDADE_IGUALDADE","Memória_reunião_18_coded",11788,19402,7614
 363,47,18,"iran_campello_normande","Memória_reunião_19_edit",1113,1126,13
-365,77,18,"tertuliana_flávia_cavalcanti_do_rêgo","Memória_reunião_19_edit",4282,4323,41
-366,77,18,"tertuliana_flávia_cavalcanti_do_rêgo","Memória_reunião_19_edit",3643,3685,42
+365,77,18,"tertuliana_flávia_calvancante_do_rêgo","Memória_reunião_19_edit",4282,4323,41
+366,77,18,"tertuliana_flávia_calvancante_do_rêgo","Memória_reunião_19_edit",3643,3685,42
 368,5,18,"cat_PLURALIDADE_IGUALDADE","Memória_reunião_19_edit",5140,6083,943
 369,18,18,"cat_COOPERAÇÃO","Memória_reunião_19_edit",5140,6083,943
 371,62,17,"tema_Educação_Ambiental","Memória_reunião_14_coded",6990,7471,481
-372,59,4,"tema_Ficalização_e_Regulação","Memória_reunião_1_coded",1984,4063,2079
+372,59,4,"tema_Fiscalização_e_Regulação","Memória_reunião_1_coded",1984,4063,2079
 373,57,4,"cat_CONFLITO","Memória_reunião_1_coded",1984,4063,2079
 580,5,4,"cat_PLURALIDADE_IGUALDADE","Memória_reunião_1_coded",4064,5060,996
 581,21,4,"marcelo_bastos_françoso","Memória_reunião_1_coded",662,676,14
@@ -256,7 +257,7 @@
 640,17,27,"cat_PUBLICIDADEeTRANSP_CONAPAC","Memória_reunião_2_coded",6326,6717,391
 641,88,27,"tema_Conselho","Memória_reunião_2_coded",6327,6717,390
 644,95,27,"atua_TURISMO","Memória_reunião_2_coded",7151,8222,1071
-646,59,27,"tema_Ficalização_e_Regulação","Memória_reunião_2_coded",7151,8221,1070
+646,59,27,"tema_Fiscalização_e_Regulação","Memória_reunião_2_coded",7151,8221,1070
 647,57,27,"cat_CONFLITO","Memória_reunião_2_coded",7151,8221,1070
 648,68,27,"vanderley_luis_turatti","Memória_reunião_2_coded",7171,7202,31
 649,32,27,"monica_dorigo_correa","Memória_reunião_2_coded",7205,7226,21
@@ -278,22 +279,22 @@
 665,94,24,"atua_PESCA","Memória_reunião_3_coded",3539,3672,133
 666,95,24,"atua_TURISMO","Memória_reunião_3_coded",3674,3829,155
 667,96,24,"atua_CONSERVACAO","Memória_reunião_3_coded",3831,4066,235
-668,59,24,"tema_Ficalização_e_Regulação","Memória_reunião_3_coded",3331,3537,206
-669,59,24,"tema_Ficalização_e_Regulação","Memória_reunião_3_coded",3831,4066,235
+668,59,24,"tema_Fiscalização_e_Regulação","Memória_reunião_3_coded",3331,3537,206
+669,59,24,"tema_Fiscalização_e_Regulação","Memória_reunião_3_coded",3831,4066,235
 670,96,24,"atua_CONSERVACAO","Memória_reunião_3_coded",4488,4690,202
 671,94,24,"atua_PESCA","Memória_reunião_3_coded",4692,4975,283
 672,95,24,"atua_TURISMO","Memória_reunião_3_coded",4977,5199,222
 673,15,24,"alberto_rodrigues","Memória_reunião_3_coded",4995,5021,26
-674,98,24,"cícero_de_oliveira","Memória_reunião_3_coded",5022,5050,28
+674,98,24,"cícero_de_oliveria","Memória_reunião_3_coded",5022,5050,28
 675,31,24,"gisela_carvalho","Memória_reunião_3_coded",5051,5075,24
 676,99,24,"gilvan_1","Memória_reunião_3_coded",5076,5089,13
-678,101,24,"mônica_sueli_coelho_araújo_da_silva","Memória_reunião_3_coded",5114,5134,20
+678,101,24,"mônica__sueli_coelho_araújo_da_silva","Memória_reunião_3_coded",5114,5134,20
 679,39,24,"josé_ulisses_dos_santos","Memória_reunião_3_coded",5135,5157,22
 680,68,24,"vanderley_luis_turatti","Memória_reunião_3_coded",5159,5199,40
-681,59,24,"tema_Ficalização_e_Regulação","Memória_reunião_3_coded",5201,5549,348
+681,59,24,"tema_Fiscalização_e_Regulação","Memória_reunião_3_coded",5201,5549,348
 682,96,24,"atua_CONSERVACAO","Memória_reunião_3_coded",5201,5549,348
 683,15,24,"alberto_rodrigues","Memória_reunião_3_coded",5220,5246,26
-684,98,24,"cícero_de_oliveira","Memória_reunião_3_coded",5247,5275,28
+684,98,24,"cícero_de_oliveria","Memória_reunião_3_coded",5247,5275,28
 685,102,24,"gandh_gouveia","Memória_reunião_3_coded",5276,5319,43
 686,103,24,"joão_da_silva_mota","Memória_reunião_3_coded",5320,5352,32
 688,37,24,"joão_cândido_nogueira","Memória_reunião_3_coded",5090,5113,23
@@ -334,7 +335,7 @@
 725,95,13,"atua_TURISMO","Memória_reunião_6_coded",5689,5942,253
 726,96,13,"atua_CONSERVACAO","Memória_reunião_6_coded",5943,6150,207
 727,95,13,"atua_TURISMO","Memória_reunião_6_coded",6151,6448,297
-728,59,13,"tema_Ficalização_e_Regulação","Memória_reunião_6_coded",6704,6940,236
+728,59,13,"tema_Fiscalização_e_Regulação","Memória_reunião_6_coded",6704,6940,236
 729,96,13,"atua_CONSERVACAO","Memória_reunião_6_coded",6704,6940,236
 730,94,13,"atua_PESCA","Memória_reunião_6_coded",7257,7517,260
 731,96,13,"atua_CONSERVACAO","Memória_reunião_6_coded",7257,7517,260
@@ -613,7 +614,7 @@
 1062,29,31,"eduardo_almeida_machado_1","Memória_reunião_12_coded_revisar",7630,7667,37
 1063,104,31,"cat_PUBLICIDADE_TRANSP_APACC","Memória_reunião_12_coded_revisar",8254,9084,830
 1064,89,31,"tema_Gestão_APACC","Memória_reunião_12_coded_revisar",8254,9084,830
-1065,59,31,"tema_Ficalização_e_Regulação","Memória_reunião_12_coded_revisar",8254,9084,830
+1065,59,31,"tema_Fiscalização_e_Regulação","Memória_reunião_12_coded_revisar",8254,9084,830
 1066,97,31,"DESTAQUES","Memória_reunião_12_coded_revisar",8254,9084,830
 1067,6,31,"bruno_stefanis_pereira_de_oliveira","Memória_reunião_12_coded_revisar",9138,9143,5
 1068,29,31,"eduardo_almeida_machado_1","Memória_reunião_12_coded_revisar",9387,9402,15
@@ -636,7 +637,7 @@
 1086,57,31,"cat_CONFLITO","Memória_reunião_12_coded_revisar",13324,14037,713
 1087,18,31,"cat_COOPERAÇÃO","Memória_reunião_12_coded_revisar",13324,14037,713
 1088,97,31,"DESTAQUES","Memória_reunião_12_coded_revisar",13324,14037,713
-1089,59,31,"tema_Ficalização_e_Regulação","Memória_reunião_12_coded_revisar",13324,14037,713
+1089,59,31,"tema_Fiscalização_e_Regulação","Memória_reunião_12_coded_revisar",13324,14037,713
 1090,39,31,"josé_ulisses_dos_santos","Memória_reunião_12_coded_revisar",14044,14051,7
 1091,4,31,"paulo_roberto_corrêa_de_souza_júnior","Memória_reunião_12_coded_revisar",14064,14069,5
 1092,57,31,"cat_CONFLITO","Memória_reunião_12_coded_revisar",14041,14854,813
@@ -650,7 +651,7 @@
 1100,42,31,"DECISOES","Memória_reunião_12_coded_revisar",15671,16130,459
 1101,107,31,"manoel_alexandre_pedrosa","Memória_reunião_12_coded_revisar",16158,16180,22
 1102,47,31,"iran_campello_normande","Memória_reunião_12_coded_revisar",16467,16487,20
-1103,59,31,"tema_Ficalização_e_Regulação","Memória_reunião_12_coded_revisar",16155,16639,484
+1103,59,31,"tema_Fiscalização_e_Regulação","Memória_reunião_12_coded_revisar",16155,16639,484
 1104,18,31,"cat_COOPERAÇÃO","Memória_reunião_12_coded_revisar",16155,16639,484
 1105,17,31,"cat_PUBLICIDADEeTRANSP_CONAPAC","Memória_reunião_12_coded_revisar",16643,17196,553
 1106,88,31,"tema_Conselho","Memória_reunião_12_coded_revisar",16643,17196,553
@@ -701,10 +702,10 @@
 1153,48,17,"carolina_neves_souza","Memória_reunião_14_coded",904,926,22
 1154,4,17,"paulo_roberto_corrêa_de_souza_júnior","Memória_reunião_14_coded",1376,1381,5
 1155,18,17,"cat_COOPERAÇÃO","Memória_reunião_14_coded",1872,2082,210
-1156,59,17,"tema_Ficalização_e_Regulação","Memória_reunião_14_coded",1872,2082,210
+1156,59,17,"tema_Fiscalização_e_Regulação","Memória_reunião_14_coded",1872,2082,210
 1157,22,17,"andréa_olinto","Memória_reunião_14_coded",1886,1910,24
 1158,104,17,"cat_PUBLICIDADE_TRANSP_APACC","Memória_reunião_14_coded",1360,1871,511
-1159,59,17,"tema_Ficalização_e_Regulação","Memória_reunião_14_coded",1360,1871,511
+1159,59,17,"tema_Fiscalização_e_Regulação","Memória_reunião_14_coded",1360,1871,511
 1160,62,17,"tema_Educação_Ambiental","Memória_reunião_14_coded",2340,2568,228
 1161,63,17,"joão_carlos_gomes_borges","Memória_reunião_14_coded",2357,2375,18
 1162,4,17,"paulo_roberto_corrêa_de_souza_júnior","Memória_reunião_14_coded",2096,2101,5
@@ -733,9 +734,9 @@
 1186,5,17,"cat_PLURALIDADE_IGUALDADE","Memória_reunião_14_coded",8068,9291,1223
 1187,48,17,"carolina_neves_souza","Memória_reunião_14_coded",8209,8223,14
 1188,39,17,"josé_ulisses_dos_santos","Memória_reunião_14_coded",8465,8472,7
-1190,77,17,"tertuliana_flávia_cavalcanti_do_rêgo","Memória_reunião_14_coded",8865,8893,28
-1192,77,1,"tertuliana_flávia_cavalcanti_do_rêgo","Memória_reunião_8_coded",16421,16432,11
-1193,77,17,"tertuliana_flávia_cavalcanti_do_rêgo","Memória_reunião_14_coded",5039,5052,13
+1190,77,17,"tertuliana_flávia_calvancante_do_rêgo","Memória_reunião_14_coded",8865,8893,28
+1192,77,1,"tertuliana_flávia_calvancante_do_rêgo","Memória_reunião_8_coded",16421,16432,11
+1193,77,17,"tertuliana_flávia_calvancante_do_rêgo","Memória_reunião_14_coded",5039,5052,13
 1194,108,17,"lucas_silveira_frança_de_araújo","Memória_reunião_14_coded",8906,8930,24
 1195,20,17,"josé_heriberto_menezes_de_lima","Memória_reunião_14_coded",8933,8951,18
 1196,39,17,"josé_ulisses_dos_santos","Memória_reunião_14_coded",9028,9051,23
@@ -749,7 +750,7 @@
 1204,88,17,"tema_Conselho","Memória_reunião_14_coded",10791,12165,1374
 1205,39,17,"josé_ulisses_dos_santos","Memória_reunião_14_coded",10828,10835,7
 1206,80,17,"vandick_da_silva_batista","Memória_reunião_14_coded",11620,11638,18
-1207,77,17,"tertuliana_flávia_cavalcanti_do_rêgo","Memória_reunião_14_coded",11577,11589,12
+1207,77,17,"tertuliana_flávia_calvancante_do_rêgo","Memória_reunião_14_coded",11577,11589,12
 1208,37,17,"joão_cândido_nogueira","Memória_reunião_14_coded",11590,11603,13
 1209,22,17,"andréa_olinto","Memória_reunião_14_coded",12197,12210,13
 1210,48,17,"carolina_neves_souza","Memória_reunião_14_coded",12389,12403,14
@@ -821,12 +822,12 @@
 1284,104,33,"cat_PUBLICIDADE_TRANSP_APACC","Memória_reunião_10_coded",3341,3677,336
 1285,104,33,"cat_PUBLICIDADE_TRANSP_APACC","Memória_reunião_10_coded",3678,3917,239
 1286,18,33,"cat_COOPERAÇÃO","Memória_reunião_10_coded",3678,3917,239
-1287,59,33,"tema_Ficalização_e_Regulação","Memória_reunião_10_coded",3678,3917,239
+1287,59,33,"tema_Fiscalização_e_Regulação","Memória_reunião_10_coded",3678,3917,239
 1288,89,33,"tema_Gestão_APACC","Memória_reunião_10_coded",3918,4242,324
 1289,104,33,"cat_PUBLICIDADE_TRANSP_APACC","Memória_reunião_10_coded",3918,4242,324
 1290,20,33,"josé_heriberto_menezes_de_lima","Memória_reunião_10_coded",4361,4385,24
 1291,57,33,"cat_CONFLITO","Memória_reunião_10_coded",4345,5038,693
-1292,59,33,"tema_Ficalização_e_Regulação","Memória_reunião_10_coded",4345,5038,693
+1292,59,33,"tema_Fiscalização_e_Regulação","Memória_reunião_10_coded",4345,5038,693
 1293,48,33,"carolina_neves_souza","Memória_reunião_10_coded",5041,5063,22
 1294,23,33,"danilo_marx_nascimento_carvalho","Memória_reunião_10_coded",5316,5348,32
 1295,69,33,"beatriz_mesquita_jardim_pedrosa","Memória_reunião_10_coded",5567,5592,25
@@ -849,7 +850,7 @@
 1314,114,33,"fabiano_pimentel_ribeiro","Memória_reunião_10_coded",7780,7805,25
 1315,127,33,"enilde_lima_oliveira","Memória_reunião_10_coded",7806,7828,22
 1316,104,33,"cat_PUBLICIDADE_TRANSP_APACC","Memória_reunião_10_coded",7757,8969,1212
-1317,59,33,"tema_Ficalização_e_Regulação","Memória_reunião_10_coded",7757,8969,1212
+1317,59,33,"tema_Fiscalização_e_Regulação","Memória_reunião_10_coded",7757,8969,1212
 1319,104,33,"cat_PUBLICIDADE_TRANSP_APACC","Memória_reunião_10_coded",8970,9327,357
 1320,47,33,"iran_campello_normande","Memória_reunião_10_coded",8972,8992,20
 1321,89,33,"tema_Gestão_APACC","Memória_reunião_10_coded",8972,9328,356
@@ -859,7 +860,7 @@
 1325,97,33,"DESTAQUES","Memória_reunião_10_coded",9329,10314,985
 1326,55,33,"juliano_mauricio_fritscher","Memória_reunião_10_coded",9665,9672,7
 1327,6,33,"bruno_stefanis_pereira_de_oliveira","Memória_reunião_10_coded",9675,9680,5
-1328,77,33,"tertuliana_flávia_cavalcanti_do_rêgo","Memória_reunião_10_coded",9729,9746,17
+1328,77,33,"tertuliana_flávia_calvancante_do_rêgo","Memória_reunião_10_coded",9729,9746,17
 1329,23,33,"danilo_marx_nascimento_carvalho","Memória_reunião_10_coded",9813,9819,6
 1330,69,33,"beatriz_mesquita_jardim_pedrosa","Memória_reunião_10_coded",9885,9911,26
 1331,94,33,"atua_PESCA","Memória_reunião_10_coded",9884,9979,95
@@ -874,7 +875,7 @@
 1341,29,33,"eduardo_almeida_machado_1","Memória_reunião_10_coded",11007,11014,7
 1342,57,33,"cat_CONFLITO","Memória_reunião_10_coded",13190,15091,1901
 1343,18,33,"cat_COOPERAÇÃO","Memória_reunião_10_coded",13190,15091,1901
-1344,59,33,"tema_Ficalização_e_Regulação","Memória_reunião_10_coded",13190,15091,1901
+1344,59,33,"tema_Fiscalização_e_Regulação","Memória_reunião_10_coded",13190,15091,1901
 1345,4,33,"paulo_roberto_corrêa_de_souza_júnior","Memória_reunião_10_coded",13375,13385,10
 1346,109,33,"thereza_christina_luz_dantas","Memória_reunião_10_coded",13713,13720,7
 1347,4,33,"paulo_roberto_corrêa_de_souza_júnior","Memória_reunião_10_coded",14245,14250,5
@@ -897,7 +898,7 @@
 1364,96,33,"atua_CONSERVACAO","Memória_reunião_10_coded",16049,16249,200
 1365,17,33,"cat_PUBLICIDADEeTRANSP_CONAPAC","Memória_reunião_10_coded",16817,17184,367
 1366,128,35,"marius_belluci_1","Memória_reunião_15_coded",672,687,15
-1367,77,35,"tertuliana_flávia_cavalcanti_do_rêgo","Memória_reunião_15_coded",908,942,34
+1367,77,35,"tertuliana_flávia_calvancante_do_rêgo","Memória_reunião_15_coded",908,942,34
 1368,20,35,"josé_heriberto_menezes_de_lima","Memória_reunião_15_coded",1063,1092,29
 1369,5,35,"cat_PLURALIDADE_IGUALDADE","Memória_reunião_15_coded",920,3752,2832
 1370,88,35,"tema_Conselho","Memória_reunião_15_coded",920,3752,2832
@@ -944,7 +945,7 @@
 1419,28,44,"tema_Recursos_Financeiros","Memória_reunião_16_coded",19884,25013,5129
 1420,104,44,"cat_PUBLICIDADE_TRANSP_APACC","Memória_reunião_16_coded",19884,25013,5129
 1421,104,44,"cat_PUBLICIDADE_TRANSP_APACC","Memória_reunião_16_coded",25017,26938,1921
-1422,59,44,"tema_Ficalização_e_Regulação","Memória_reunião_16_coded",25017,26938,1921
+1422,59,44,"tema_Fiscalização_e_Regulação","Memória_reunião_16_coded",25017,26938,1921
 1423,56,44,"tema_Zoneamento","Memória_reunião_16_coded",25017,26938,1921
 1424,97,44,"DESTAQUES","Memória_reunião_16_coded",25017,26938,1921
 1425,18,44,"cat_COOPERAÇÃO","Memória_reunião_16_coded",26969,27409,440
@@ -1013,7 +1014,7 @@
 1492,132,19,"fernanda_loffer_niemeyer_attademo","Memória_reunião_20_coded",3542,3560,18
 1493,95,19,"atua_TURISMO","Memória_reunião_20_coded",3621,3749,128
 1494,133,19,"alexandre_henrique_rocha_dantas","Memória_reunião_20_coded",3634,3650,16
-1495,77,19,"tertuliana_flávia_cavalcanti_do_rêgo","Memória_reunião_20_coded",3867,3896,29
+1495,77,19,"tertuliana_flávia_calvancante_do_rêgo","Memória_reunião_20_coded",3867,3896,29
 1496,6,19,"bruno_stefanis_pereira_de_oliveira","Memória_reunião_20_coded",4189,4204,15
 1497,96,19,"atua_CONSERVACAO","Memória_reunião_20_coded",4727,4748,21
 1498,37,19,"joão_cândido_nogueira","Memória_reunião_20_coded",4727,4747,20
@@ -1025,7 +1026,7 @@
 1504,134,19,"carlos_eduardo_gomes_barreto","Memória_reunião_20_coded",6784,6812,28
 1505,80,19,"vandick_da_silva_batista","Memória_reunião_20_coded",7149,7178,29
 1506,89,19,"tema_Gestão_APACC","Memória_reunião_20_coded",7612,7790,178
-1507,77,19,"tertuliana_flávia_cavalcanti_do_rêgo","Memória_reunião_20_coded",9477,9483,6
+1507,77,19,"tertuliana_flávia_calvancante_do_rêgo","Memória_reunião_20_coded",9477,9483,6
 1508,104,19,"cat_PUBLICIDADE_TRANSP_APACC","Memória_reunião_20_coded",7791,10056,2265
 1510,18,19,"cat_COOPERAÇÃO","Memória_reunião_20_coded",7791,10056,2265
 1511,96,19,"atua_CONSERVACAO","Memória_reunião_20_coded",8949,9174,225
@@ -1043,7 +1044,7 @@
 1523,80,19,"vandick_da_silva_batista","Memória_reunião_20_coded",9699,9706,7
 1524,54,19,"clemente_coelho_junior","Memória_reunião_20_coded",9848,9859,11
 1528,57,19,"cat_CONFLITO","Memória_reunião_20_coded",7791,13636,5845
-1529,59,19,"tema_Ficalização_e_Regulação","Memória_reunião_20_coded",10085,13636,3551
+1529,59,19,"tema_Fiscalização_e_Regulação","Memória_reunião_20_coded",10085,13636,3551
 1530,133,19,"alexandre_henrique_rocha_dantas","Memória_reunião_20_coded",10634,10651,17
 1531,37,19,"joão_cândido_nogueira","Memória_reunião_20_coded",10717,10725,8
 1532,95,19,"atua_TURISMO","Memória_reunião_20_coded",11169,11281,112
@@ -1054,16 +1055,16 @@
 1537,6,19,"bruno_stefanis_pereira_de_oliveira","Memória_reunião_20_coded",12698,12703,5
 1538,95,19,"atua_TURISMO","Memória_reunião_20_coded",12684,12946,262
 1539,135,19,"leonardo_tortorielo_messias","Memória_reunião_20_coded",14824,14840,16
-1540,59,19,"tema_Ficalização_e_Regulação","Memória_reunião_20_coded",13638,14996,1358
+1540,59,19,"tema_Fiscalização_e_Regulação","Memória_reunião_20_coded",13638,14996,1358
 1541,57,19,"cat_CONFLITO","Memória_reunião_20_coded",13638,14996,1358
 1542,135,19,"leonardo_tortorielo_messias","Memória_reunião_20_coded",13312,13328,16
 1543,133,19,"alexandre_henrique_rocha_dantas","Memória_reunião_20_coded",13837,13845,8
 1544,6,19,"bruno_stefanis_pereira_de_oliveira","Memória_reunião_20_coded",13923,13928,5
 1545,96,19,"atua_CONSERVACAO","Memória_reunião_20_coded",13909,14059,150
-1546,138,19,"rivaldo_couto_dos_santos_junior","Memória_reunião_20_coded",14075,14082,7
+1546,138,19,"rivaldo _couto_dos_santos_junior","Memória_reunião_20_coded",14075,14082,7
 1547,37,19,"joão_cândido_nogueira","Memória_reunião_20_coded",14139,14147,8
 1548,139,19,"mariana_goresten","Memória_reunião_20_coded",14264,14271,7
-1549,59,19,"tema_Ficalização_e_Regulação","Memória_reunião_20_coded",14998,17474,2476
+1549,59,19,"tema_Fiscalização_e_Regulação","Memória_reunião_20_coded",14998,17474,2476
 1550,57,19,"cat_CONFLITO","Memória_reunião_20_coded",14998,17474,2476
 1551,131,19,"diego_da_silva_santos","Memória_reunião_20_coded",15124,15137,13
 1552,54,19,"clemente_coelho_junior","Memória_reunião_20_coded",15271,15286,15
@@ -1071,7 +1072,7 @@
 1554,140,19,"rosângela_paula_teixeira_lessa","Memória_reunião_20_coded",15667,15695,28
 1555,79,19,"severino_antonio_dos_santos","Memória_reunião_20_coded",16023,16039,16
 1556,80,19,"vandick_da_silva_batista","Memória_reunião_20_coded",16431,16446,15
-1557,138,19,"rivaldo_couto_dos_santos_junior","Memória_reunião_20_coded",16638,16645,7
+1557,138,19,"rivaldo _couto_dos_santos_junior","Memória_reunião_20_coded",16638,16645,7
 1558,141,19,"sérgio_magalhães_rezende","Memória_reunião_20_coded",16714,16728,14
 1559,116,19,"waldemar_rolim_lacerda_junior","Memória_reunião_20_coded",16873,16889,16
 1560,96,19,"atua_CONSERVACAO","Memória_reunião_20_coded",17940,18149,209
@@ -1082,7 +1083,8 @@
 1565,116,19,"waldemar_rolim_lacerda_junior","Memória_reunião_20_coded",19151,19179,28
 1566,80,19,"vandick_da_silva_batista","Memória_reunião_20_coded",19284,19299,15
 1567,6,19,"bruno_stefanis_pereira_de_oliveira","Memória_reunião_20_coded",19396,19401,5
-1569,138,19,"rivaldo_couto_dos_santos_junior","Memória_reunião_20_coded",19735,19742,7
+1568,142,19,"convidad_turismo","Memória_reunião_20_coded",19503,19719,216
+1569,138,19,"rivaldo _couto_dos_santos_junior","Memória_reunião_20_coded",19735,19742,7
 1570,54,19,"clemente_coelho_junior","Memória_reunião_20_coded",19919,19927,8
 1571,20,19,"josé_heriberto_menezes_de_lima","Memória_reunião_20_coded",20168,20177,9
 1572,140,19,"rosângela_paula_teixeira_lessa","Memória_reunião_20_coded",20306,20321,15
@@ -1092,8 +1094,8 @@
 1577,139,19,"mariana_goresten","Memória_reunião_20_coded",20816,20823,7
 1578,22,19,"andréa_olinto","Memória_reunião_20_coded",21007,21020,13
 1579,141,19,"sérgio_magalhães_rezende","Memória_reunião_20_coded",21115,21129,14
-1581,77,19,"tertuliana_flávia_cavalcanti_do_rêgo","Memória_reunião_20_coded",21371,21377,6
-1582,59,19,"tema_Ficalização_e_Regulação","Memória_reunião_20_coded",17812,23808,5996
+1581,77,19,"tertuliana_flávia_calvancante_do_rêgo","Memória_reunião_20_coded",21371,21377,6
+1582,59,19,"tema_Fiscalização_e_Regulação","Memória_reunião_20_coded",17812,23808,5996
 1583,57,19,"cat_CONFLITO","Memória_reunião_20_coded",17812,23808,5996
 1584,135,19,"leonardo_tortorielo_messias","Memória_reunião_20_coded",23412,23429,17
 1585,37,19,"joão_cândido_nogueira","Memória_reunião_20_coded",23637,23645,8
@@ -1112,17 +1114,19 @@
 1598,109,19,"thereza_christina_luz_dantas","Memória_reunião_20_coded",27432,27438,6
 1599,39,19,"josé_ulisses_dos_santos","Memória_reunião_20_coded",27055,27062,7
 1602,57,20,"cat_CONFLITO","Memória_reunião_21_coded",2700,4529,1829
-1603,59,20,"tema_Ficalização_e_Regulação","Memória_reunião_21_coded",2700,4529,1829
+1603,59,20,"tema_Fiscalização_e_Regulação","Memória_reunião_21_coded",2700,4529,1829
 1607,88,20,"tema_Conselho","Memória_reunião_21_coded",343,2699,2356
 1608,17,20,"cat_PUBLICIDADEeTRANSP_CONAPAC","Memória_reunião_21_coded",343,2699,2356
 1609,36,20,"luiz_claudio_gonçalves_de_melo","Memória_reunião_21_coded",3900,3912,12
 1610,37,20,"joão_cândido_nogueira","Memória_reunião_21_coded",4170,4190,20
 1611,132,20,"fernanda_loffer_niemeyer_attademo","Memória_reunião_21_coded",4599,4616,17
-1612,77,20,"tertuliana_flávia_cavalcanti_do_rêgo","Memória_reunião_21_coded",5151,5162,11
+1612,77,20,"tertuliana_flávia_calvancante_do_rêgo","Memória_reunião_21_coded",5151,5162,11
 1613,96,20,"atua_CONSERVACAO","Memória_reunião_21_coded",5137,5563,426
 1614,104,20,"cat_PUBLICIDADE_TRANSP_APACC","Memória_reunião_21_coded",4530,9203,4673
 1615,6,20,"bruno_stefanis_pereira_de_oliveira","Memória_reunião_21_coded",5947,5962,15
 1616,143,20,"joab_gomes_de_melo","Memória_reunião_21_coded",6114,6118,4
+1617,144,20,"convidad_ONG_Associação","Memória_reunião_21_coded",6454,6622,168
+1618,142,20,"convidad_turismo","Memória_reunião_21_coded",6669,6735,66
 1619,74,20,"pedro_luiz_da_silva","Memória_reunião_21_coded",7658,7669,11
 1620,94,20,"atua_PESCA","Memória_reunião_21_coded",7644,7802,158
 1621,6,20,"bruno_stefanis_pereira_de_oliveira","Memória_reunião_21_coded",7817,7833,16
@@ -1163,6 +1167,7 @@
 1664,48,20,"carolina_neves_souza","Memória_reunião_21_coded",19819,19833,14
 1665,29,20,"eduardo_almeida_machado_1","Memória_reunião_21_coded",20904,20911,7
 1666,37,20,"joão_cândido_nogueira","Memória_reunião_21_coded",21078,21086,8
+1668,144,20,"convidad_ONG_Associação","Memória_reunião_21_coded",21267,21350,83
 1669,109,20,"thereza_christina_luz_dantas","Memória_reunião_21_coded",21581,21592,11
 1670,39,20,"josé_ulisses_dos_santos","Memória_reunião_21_coded",21721,21728,7
 1671,74,20,"pedro_luiz_da_silva","Memória_reunião_21_coded",22180,22191,11
@@ -1210,12 +1215,12 @@
 1717,39,21,"josé_ulisses_dos_santos","Memória_reunião_22_edit",7997,8004,7
 1718,26,21,"mauro_maida","Memória_reunião_22_edit",8252,8257,5
 1719,135,21,"leonardo_tortorielo_messias","Memória_reunião_22_edit",9228,9236,8
-1720,59,21,"tema_Ficalização_e_Regulação","Memória_reunião_22_edit",7198,9647,2449
+1720,59,21,"tema_Fiscalização_e_Regulação","Memória_reunião_22_edit",7198,9647,2449
 1721,18,21,"cat_COOPERAÇÃO","Memória_reunião_22_edit",7198,9647,2449
 1722,132,21,"fernanda_loffer_niemeyer_attademo","Memória_reunião_22_edit",9683,9691,8
 1723,79,21,"severino_antonio_dos_santos","Memória_reunião_22_edit",9811,9827,16
 1724,109,21,"thereza_christina_luz_dantas","Memória_reunião_22_edit",9959,9973,14
-1725,138,21,"rivaldo_couto_dos_santos_junior","Memória_reunião_22_edit",10037,10044,7
+1725,138,21,"rivaldo _couto_dos_santos_junior","Memória_reunião_22_edit",10037,10044,7
 1726,136,21,"izabel_cristina_chagas","Memória_reunião_22_edit",10097,10103,6
 1727,39,21,"josé_ulisses_dos_santos","Memória_reunião_22_edit",10223,10230,7
 1728,26,21,"mauro_maida","Memória_reunião_22_edit",10327,10332,5
@@ -1234,6 +1239,7 @@
 1741,17,21,"cat_PUBLICIDADEeTRANSP_CONAPAC","Memória_reunião_22_edit",9649,14748,5099
 1742,88,21,"tema_Conselho","Memória_reunião_22_edit",9649,14748,5099
 1743,80,21,"vandick_da_silva_batista","Memória_reunião_22_edit",15049,15056,7
+1744,151,21,"convidad_InstiPesquisa","Memória_reunião_22_edit",15248,15266,18
 1745,26,21,"mauro_maida","Memória_reunião_22_edit",15599,15604,5
 1746,48,21,"carolina_neves_souza","Memória_reunião_22_edit",16210,16236,26
 1747,132,21,"fernanda_loffer_niemeyer_attademo","Memória_reunião_22_edit",16294,16302,8
@@ -1257,7 +1263,7 @@
 1766,109,21,"thereza_christina_luz_dantas","Memória_reunião_22_edit",22215,22221,6
 1767,6,21,"bruno_stefanis_pereira_de_oliveira","Memória_reunião_22_edit",22480,22485,5
 1768,82,21,"eduardo_barreto_1","Memória_reunião_22_edit",23203,23218,15
-1769,138,21,"rivaldo_couto_dos_santos_junior","Memória_reunião_22_edit",23397,23404,7
+1769,138,21,"rivaldo _couto_dos_santos_junior","Memória_reunião_22_edit",23397,23404,7
 1770,153,21,"jéssica_francyne_frias","Memória_reunião_22_edit",24079,24086,7
 1771,135,21,"leonardo_tortorielo_messias","Memória_reunião_22_edit",24323,24331,8
 1772,39,21,"josé_ulisses_dos_santos","Memória_reunião_22_edit",24648,24655,7
@@ -1268,5 +1274,7 @@
 1777,29,21,"eduardo_almeida_machado_1","Memória_reunião_22_edit",27634,27641,7
 1778,79,21,"severino_antonio_dos_santos","Memória_reunião_22_edit",28248,28256,8
 1779,74,21,"pedro_luiz_da_silva","Memória_reunião_22_edit",29044,29054,10
-1780,59,21,"tema_Ficalização_e_Regulação","Memória_reunião_22_edit",27137,30965,3828
+1780,59,21,"tema_Fiscalização_e_Regulação","Memória_reunião_22_edit",27137,30965,3828
 1781,18,21,"cat_COOPERAÇÃO","Memória_reunião_22_edit",27137,30965,3828
+1782,88,45,"tema_Conselho","reuniao_1",192,1555,1363
+1783,26,45,"mauro_maida","reuniao_1",1138,1175,37
