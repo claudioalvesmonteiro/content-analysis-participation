@@ -138,6 +138,9 @@ presen_insti <- aggregate(apacc_data$presente,
 # ordenar os nomes das instituicoes com base na presenca
 presen_insti$Group.1  <- factor(presen_insti$Group.1, 
                          levels = unique(presen_insti$Group.1[order(presen_insti$x)]), ordered = TRUE)
+
+# visualizar media de comparecimento entre as instituicoes
+mean(presen_insti$x) / 23 # numero de reunioes computadas 
 ```
 
 ```{r,  fig.width=6, fig.height=8}
@@ -295,18 +298,24 @@ participaData <- participaData[participaData$entidade_sigla != "ICMBIO",]
 # contagem por grupo
 participa_cont <- aggregate(participaData$Freq, by=list(Category=participaData$categoria1), FUN=sum)
 
+# inserir info de assentos na base
+participa_cont$numero_assentos <- c(6, 6, 12, 8, 3, 3)
+
+# calcular proporcionalidade
+participa_cont <- mutate(participa_cont, participaProp = round((x/numero_assentos),1))
+
 # renomear para grafico
 participa_cont$Category <- as.character(participa_cont$Category)
 participa_cont$Category[6] <- "Organizações de educação e cultura \n e associações comunitárias"
 
 # ordenar
 participa_cont$Category <- factor(participa_cont$Category, 
-                              levels = participa_cont$Category[order(participa_cont$x)])
+                              levels = participa_cont$Category[order(participa_cont$participaProp)])
 # grafico comparativo
-ggplot(participa_cont, aes(x = Category, y = x))+
+ggplot(participa_cont, aes(x = Category, y = participaProp))+
   geom_bar(stat = "identity", fill = "#15041c") +
-  geom_label(aes(label = x), size = 3.5)+
-  labs(y = "Número de Situações de Fala", x = "", title = "") +
+  geom_label(aes(label = participaProp), size = 3.5)+
+  labs(y = "Número de Situações de Fala por Assento", x = "", title = "") +
   coord_flip()+
  ggsave("prop_voz_cat.png", path = "Resultados", width = 8, height = 3, units = "in")
 
